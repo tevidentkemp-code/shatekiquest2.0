@@ -161,13 +161,278 @@
   #live .bottom .btn{min-height:36px;font-size:10px}
   #live .sq{font-size:clamp(8.5px,2.55vw,11px)}
 }
+
+/* ===== LIVE VIEWPORT CONTRACT v3: no-scroll iPhone layout ===== */
+html:has(#live.on), body:has(#live.on){
+  height:100%;
+  max-height:100%;
+  overflow:hidden;
+  overscroll-behavior:none;
+}
+body:has(#live.on){
+  min-height:0 !important;
+}
+body:has(#live.on) .app{
+  width:min(430px,100%);
+  height:100svh;
+  min-height:0 !important;
+  max-height:100svh;
+  overflow:hidden;
+  padding:max(3px,env(safe-area-inset-top)) 8px max(3px,env(safe-area-inset-bottom));
+}
+#live.screen.on{
+  display:grid !important;
+  grid-template-rows:
+    82px
+    46px
+    minmax(0,1fr)
+    9px
+    48px
+    40px;
+  gap:4px;
+  height:100%;
+  min-height:0 !important;
+  max-height:100%;
+  overflow:hidden;
+  align-content:stretch;
+}
+#live > *{
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  margin-left:0;
+  margin-right:0;
+}
+#live .live-head{
+  position:relative !important;
+  top:auto !important;
+  z-index:5;
+  display:grid;
+  grid-template-rows:50px 28px;
+  gap:2px;
+  min-height:0;
+  padding:0 !important;
+  margin:0;
+  background:linear-gradient(#090d10 92%,transparent);
+}
+#live .live-brand{
+  height:50px;
+  min-height:0;
+  align-items:center;
+  gap:6px;
+}
+#live .live-brand .brand{
+  font-family:"Arial Black",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:22px !important;
+  line-height:.82;
+  letter-spacing:-.055em;
+  text-shadow:none;
+}
+#live .modepill{
+  margin-top:2px;
+  font-size:8px !important;
+  line-height:1;
+}
+#live .live-brand .center{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+#live .live-brand .steve-mark{
+  width:42px !important;
+  height:44px !important;
+  flex:0 0 42px;
+}
+#live .live-brand .steve-head{
+  transform:scale(.36) !important;
+  transform-origin:50% 0%;
+  top:0;
+}
+#live .live-brand .steve-shirt{
+  width:44px !important;
+  height:20px !important;
+}
+#live .score{
+  font-size:14px !important;
+  white-space:nowrap;
+}
+#live .live-head > .tiny{
+  display:none;
+}
+#live .strip{
+  height:28px;
+  min-height:28px !important;
+  padding:0 !important;
+  gap:4px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  align-items:center;
+}
+#live .chip{
+  height:27px;
+  padding:3px 7px !important;
+  font-size:9.5px !important;
+  line-height:1;
+  border-radius:999px;
+}
+#live .potd-card{
+  box-sizing:border-box;
+  width:100% !important;
+  height:46px !important;
+  min-height:46px !important;
+  max-height:46px;
+  margin:0 !important;
+  padding:5px 8px !important;
+  border-radius:10px !important;
+}
+#live .potd-label{
+  font-size:7.5px !important;
+  line-height:1;
+}
+#live .potd-phrase{
+  font-size:11px !important;
+  line-height:1.02;
+}
+#live .potd-count{
+  font-size:10px !important;
+  padding:3px 6px !important;
+}
+#live #boardWrap{
+  width:100%;
+  height:100%;
+  min-height:0;
+  max-height:100%;
+  overflow:hidden;
+}
+#live .board{
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  grid-template-rows:repeat(4,minmax(0,1fr)) !important;
+  gap:4px !important;
+}
+#live .sq{
+  width:100%;
+  height:100%;
+  min-width:0 !important;
+  min-height:0 !important;
+  max-width:100%;
+  max-height:100%;
+  aspect-ratio:auto !important;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  text-wrap:balance;
+  padding:3px !important;
+  border-radius:8px !important;
+  font-size:clamp(8.5px,2.55vw,10.5px) !important;
+  line-height:1.01 !important;
+}
+#live .cnt{
+  top:2px;
+  right:2px;
+  font-size:7px;
+  padding:1px 3px;
+}
+#live .bonus-title{
+  height:9px;
+  min-height:9px;
+  margin:0 !important;
+  padding:0 1px;
+  font-size:7px !important;
+  line-height:9px;
+  letter-spacing:.13em;
+  overflow:hidden;
+}
+#live .bonus-strip{
+  box-sizing:border-box;
+  width:100% !important;
+  height:48px !important;
+  min-height:48px !important;
+  max-height:48px;
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:4px !important;
+  margin:0 !important;
+}
+#live .bonus-cell{
+  box-sizing:border-box;
+  width:100% !important;
+  height:48px !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  max-width:100%;
+  overflow:hidden;
+  padding:3px !important;
+  border-radius:8px !important;
+  font-size:9px !important;
+  line-height:1.01 !important;
+  text-wrap:balance;
+}
+#live .bonus-type{
+  display:block;
+  font-size:6.5px !important;
+  line-height:1;
+  margin-bottom:2px !important;
+}
+#live .bottom{
+  box-sizing:border-box;
+  width:100% !important;
+  height:40px !important;
+  min-height:40px !important;
+  position:relative !important;
+  bottom:auto !important;
+  display:grid !important;
+  grid-template-columns:44px 44px minmax(0,1fr) !important;
+  gap:4px !important;
+  margin:0 !important;
+  padding:0 !important;
+  background:none !important;
+}
+#live .bottom .btn{
+  min-width:0;
+  width:100%;
+  height:40px !important;
+  min-height:40px !important;
+  padding:0 !important;
+  border-radius:9px !important;
+  font-size:11px !important;
+  line-height:1;
+}
+#live #removeBtn,
+#live #settingsBtn{
+  font-size:19px !important;
+}
+#live #leaveGameBtn{
+  font-size:11px !important;
+}
+@media(max-height:720px){
+  #live.screen.on{
+    grid-template-rows:74px 42px minmax(0,1fr) 8px 44px 36px;
+    gap:3px;
+  }
+  #live .live-head{grid-template-rows:46px 25px;gap:1px}
+  #live .live-brand{height:46px}
+  #live .strip{height:25px;min-height:25px !important}
+  #live .chip{height:24px;font-size:9px !important}
+  #live .potd-card{height:42px !important;min-height:42px !important}
+  #live .bonus-title{height:8px;min-height:8px;line-height:8px}
+  #live .bonus-strip{height:44px !important;min-height:44px !important}
+  #live .bonus-cell{height:44px !important;font-size:8.5px !important}
+  #live .bottom{height:36px !important;min-height:36px !important}
+  #live .bottom .btn{height:36px !important;min-height:36px !important}
+}
 </style></head><body><div id="toast" class="toast"></div><div id="loading" class="loading">SYNCING…</div><main class="app">
 <section id="home" class="screen on"><div class="hero"><div><div class="brand">StevO <span>BingO</span></div><div class="tag" style="margin-top:18px">SAME STEVE.<br>DIFFERENT DAY.</div></div><div class="steve-mark" aria-label="Steve"><div class="steve-head"><div class="steve-hair"></div><div class="steve-glasses"><i></i><i></i></div><div class="steve-beard"></div></div><div class="steve-shirt"></div></div></div><div id="who" class="playerbar"></div><div id="rejoinWrap" style="display:none"><button class="btn out" style="width:100%;margin-bottom:8px" onclick="rejoin()">REJOIN GAME</button><button class="link" style="width:100%;color:#ff746b;padding:8px 0 2px" onclick="openLeaveConfirm()">LEAVE CURRENT GAME</button></div><div class="home-actions"><button class="btn orange" onclick="chooseMode('daily')">DAILY PLAY</button><div class="mode-note">18:00–00:00 London time</div><button class="btn out" onclick="chooseMode('private')">PRIVATE PLAY</button><button class="link" onclick="showPBs()">PERSONAL BESTS</button></div></section>
 <section id="profiles" class="screen"><button class="link" onclick="go('home')">‹ BACK</button><div class="title">YOUR PLAYER</div><div class="card"><input id="nameInput" class="input" maxlength="24" placeholder="Enter your name"><button class="btn orange" style="width:100%;margin-top:10px" onclick="savePlayer()">CONTINUE</button></div><div class="title" style="font-size:20px">SAVED PLAYERS</div><div id="savedList" class="saved"></div></section>
 <section id="howto" class="screen"><div class="hero"><div class="brand" style="font-size:30px">StevO <span>BingO</span></div><div class="steve-mark" aria-label="Steve"><div class="steve-head"><div class="steve-hair"></div><div class="steve-glasses"><i></i><i></i></div><div class="steve-beard"></div></div><div class="steve-shirt"></div></div></div><div class="title">HOW TO PLAY</div><div class="card"><div class="how-step"><div class="num">1</div><div><b>SPOT IT</b><div class="muted tiny">Tap a square when Steve says or does it.</div></div></div><div class="how-step"><div class="num">2</div><div><b>WIN THE 4×4</b><div class="muted tiny">Complete all 16 main squares to win. Lines, corners and X earn bonus points on the way.</div></div></div><div class="how-step" style="border:0"><div class="num">3</div><div><b>CHASE THE JACKPOT</b><div class="muted tiny">Word of the Day + the 3 bottom bonus cells score extra. Collect all 20 active items for the Jackpot.</div></div></div></div><button class="btn orange" style="margin-top:auto" onclick="finishHow()">LET'S PLAY</button></section>
 <section id="private" class="screen"><button class="link" onclick="go('home')">‹ BACK</button><div class="title">PRIVATE PLAY</div><div class="split"><button class="btn orange" onclick="createPrivate()">CREATE GAME</button><button class="btn out" onclick="openJoin()">JOIN GAME</button></div><div id="joinBox" class="card" style="display:none;margin-top:12px"><input id="codeInput" class="input center" maxlength="5" placeholder="K7FPM" style="text-transform:uppercase;font-size:25px;letter-spacing:.12em"><button class="btn orange" style="width:100%;margin-top:10px" onclick="joinPrivate()">JOIN</button><div id="joinErr" class="error"></div></div></section>
 <section id="lobby" class="screen"><div class="live-brand"><div><div class="brand" style="font-size:30px">StevO <span>BingO</span></div><div id="lobbyMode" class="modepill"></div></div><div class="steve-mark" aria-label="Steve"><div class="steve-head"><div class="steve-hair"></div><div class="steve-glasses"><i></i><i></i></div><div class="steve-beard"></div></div><div class="steve-shirt"></div></div></div><div id="codeCard" class="card center" style="display:none"><div class="tiny muted">GAME CODE</div><div id="lobbyCode" class="lobby-code"></div><div class="split"><button class="btn out" onclick="copyCode()">COPY</button><button class="btn out" onclick="shareCode()">SHARE</button></div></div><div class="card center" style="margin-top:10px"><div id="lobbyTitle" class="title" style="font-size:26px;margin:2px 0"></div><div id="lobbySub" class="muted"></div></div><div class="title" style="font-size:20px">PLAYERS JOINED</div><div id="lobbyPlayers" class="players-list"></div><button id="startPrivateBtn" class="btn orange" style="display:none;margin-top:auto" onclick="startPrivate()">START GAME</button><button class="btn out" style="margin-top:10px" onclick="leaveToHome()">LEAVE LOBBY</button></section>
-<section id="live" class="screen"><div class="live-head"><div class="live-brand"><div><div class="brand">StevO <span>BingO</span></div><div id="liveMode" class="modepill"></div></div><div class="center"><div class="steve-mark" aria-label="Steve"><div class="steve-head"><div class="steve-hair"></div><div class="steve-glasses"><i></i><i></i></div><div class="steve-beard"></div></div><div class="steve-shirt"></div></div><div id="myScore" class="score">0 PTS</div></div></div><div class="tiny muted">PLAYING NOW</div><div id="strip" class="strip"></div></div><button id="potdCard" class="potd-card" onclick="tapPotd()"><div><div class="potd-label">★ WORD OF THE DAY</div><div id="potdPhrase" class="potd-phrase"></div></div><div id="potdCount" class="potd-count">+20</div></button><div id="boardWrap"><div id="board" class="board"></div></div><div class="bonus-title">ACTIONS & CLOTHES</div><div id="bonusStrip" class="bonus-strip"></div><div class="bottom"><button id="removeBtn" class="btn out" onclick="toggleRemove()">− REMOVE</button><button class="btn out" onclick="openSettings()">⚙ SETTINGS</button><button class="btn red" onclick="confirmLeave()">LEAVE GAME</button></div></section>
+<section id="live" class="screen"><div class="live-head"><div class="live-brand"><div><div class="brand">StevO <span>BingO</span></div><div id="liveMode" class="modepill"></div></div><div class="center"><div class="steve-mark" aria-label="Steve"><div class="steve-head"><div class="steve-hair"></div><div class="steve-glasses"><i></i><i></i></div><div class="steve-beard"></div></div><div class="steve-shirt"></div></div><div id="myScore" class="score">0 PTS</div></div></div><div class="tiny muted">PLAYING NOW</div><div id="strip" class="strip"></div></div><button id="potdCard" class="potd-card" onclick="tapPotd()"><div><div class="potd-label">★ WORD OF THE DAY</div><div id="potdPhrase" class="potd-phrase"></div></div><div id="potdCount" class="potd-count">+20</div></button><div id="boardWrap"><div id="board" class="board"></div></div><div class="bonus-title">ACTIONS & CLOTHES</div><div id="bonusStrip" class="bonus-strip"></div><div class="bottom"><button id="removeBtn" class="btn out" aria-label="Remove hit" title="Remove hit" onclick="toggleRemove()">−</button><button id="settingsBtn" class="btn out" aria-label="Settings" title="Settings" onclick="openSettings()">⚙</button><button id="leaveGameBtn" class="btn red" onclick="confirmLeave()">LEAVE GAME</button></div></section>
 <section id="results" class="screen"><div class="hero"><div><div class="brand" style="font-size:32px">GAME <span>COMPLETE</span></div><div id="winnerText" class="tag" style="margin-top:15px"></div></div><div class="steve-mark" aria-label="Steve"><div class="steve-head"><div class="steve-hair"></div><div class="steve-glasses"><i></i><i></i></div><div class="steve-beard"></div></div><div class="steve-shirt"></div></div></div><div class="title" style="font-size:22px">FINAL SCORES</div><div id="resultList" class="card"></div><button class="btn orange" style="margin-top:auto" onclick="clearSession()">BACK TO HOME</button></section>
 <section id="pbs" class="screen"><button class="link" onclick="go('home')">‹ BACK</button><div class="title">PERSONAL BESTS</div><div id="pbList" class="card"></div></section></main>
 <div id="playerDetail" class="modal"><div class="sheet"><div id="playerDetailName" class="title" style="font-size:28px;margin-top:0"></div><div id="playerDetailScore" class="player-detail-score"></div><div id="playerDetailMeta" class="muted tiny" style="margin-top:4px"></div><div id="playerBreakdown" class="breakdown"></div><div id="playerAchievements" class="achievement-row"></div><button class="btn" style="width:100%;margin-top:18px" onclick="closePlayerDetail()">CLOSE</button></div></div><div id="leaveConfirm" class="modal"><div class="sheet"><div class="title" style="font-size:26px">LEAVE GAME?</div><div class="muted" style="line-height:1.45;margin:4px 0 16px">Are you sure? Your saved player stays on this device, but this active game will be removed from the home screen.</div><div class="split"><button class="btn out" onclick="closeLeaveConfirm()">CANCEL</button><button class="btn red" onclick="leaveCurrentGame()">LEAVE</button></div></div></div><div id="settings" class="modal"><div class="sheet"><div class="title" style="font-size:24px">SETTINGS</div><div class="p-row"><span>Sound effects</span><input id="soundToggle" type="checkbox" checked></div><div class="p-row"><span>Vibration</span><input id="vibeToggle" type="checkbox" checked></div><button class="btn out" style="width:100%;margin-top:8px" onclick="goHowFromSettings()">HOW TO PLAY</button><button id="endPrivateBtn" class="btn red" style="width:100%;margin-top:8px;display:none" onclick="endPrivate()">END PRIVATE GAME</button><button class="btn" style="width:100%;margin-top:8px" onclick="closeSettings()">CLOSE</button></div></div>
@@ -212,7 +477,7 @@ function renderLobby(){const g=S.game,isPriv=g.mode==='private';$('lobbyMode').t
   $('boardWrap').classList.toggle('remove-mode',removeMode);
   $('bonusStrip').classList.toggle('remove-mode',removeMode);
   $('potdCard').style.outline=removeMode&&pc>0?'2px solid #e65249':'none';
-  $('removeBtn').textContent=removeMode?'CANCEL':'− REMOVE';
+  $('removeBtn').textContent=removeMode?'×':'−';$('removeBtn').setAttribute('aria-label',removeMode?'Cancel remove mode':'Remove hit');
   $('endPrivateBtn').style.display=g.mode==='private'&&auth?.hostToken?'block':'none'
 }
 function tapPotd(){if(!S?.game)return;tapCell(S.game.phrase_of_day)}

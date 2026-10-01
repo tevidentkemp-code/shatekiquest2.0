@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090d10"><title>StevO BingO</title><link rel="icon" href="data:,"><meta name="description" content="Same Steve. Different day. Play StevO BingO with your gang."><meta name="stevo-release" content="2026-10-01-character-variants"><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090d10"><title>StevO BingO</title><link rel="icon" href="data:,"><meta name="description" content="Same Steve. Different day. Play StevO BingO with your gang."><meta name="stevo-release" content="2026-10-01-responsive-game-screens"><style>
 :root{--bg:#090d10;--panel:#0f171c;--cream:#f4eee4;--orange:#ff641f;--muted:#91a0aa;--red:#f14e46;--gold:#ffc640;--line:#26343d}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 50% -10%,#382014 0,#101418 38%,#080b0e 72%);color:#fff;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{min-height:100dvh}.app{width:min(430px,100%);margin:auto;min-height:100dvh;padding:max(14px,env(safe-area-inset-top)) 14px max(18px,env(safe-area-inset-bottom))}
 .screen{display:none;min-height:calc(100dvh - 30px)}.screen.on{display:flex;flex-direction:column}.brand{font-family:"Arial Black",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:42px;line-height:.82;font-weight:1000;letter-spacing:-.05em}.brand span{display:block;color:var(--orange)}.hero,.live-brand{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}.hero img{width:46%;max-height:210px;object-fit:contain;filter:drop-shadow(0 12px 18px #0008)}.tag{font-weight:900;font-size:13px;letter-spacing:.08em}.muted{color:var(--muted)}.tiny{font-size:12px}.card{background:linear-gradient(180deg,#111a20,#0c1317);border:1px solid #293942;border-radius:19px;padding:16px;box-shadow:0 18px 42px #0005,inset 0 1px 0 #ffffff08}.btn{border:0;border-radius:15px;padding:15px 16px;font-size:18px;font-weight:1000;color:#fff;background:linear-gradient(180deg,#1b2830,#141f25);min-height:52px;letter-spacing:.01em;box-shadow:inset 0 1px 0 #ffffff0b,0 10px 22px #0002;transition:transform .08s ease,filter .15s ease}.btn:active{transform:scale(.985);filter:brightness(.94)}.btn.orange{background:linear-gradient(180deg,#ff823f,#ff5f18);box-shadow:0 12px 28px #ff641f2e,inset 0 1px 0 #ffffff35}.btn.out{background:#0d1419;border:1px solid #344650}.btn.red{background:#681e1a;border:1px solid #a63d35}.home-actions{margin-top:20px;display:grid;gap:11px;padding-bottom:10px}.mode-note{text-align:center;font-size:12px;color:var(--muted)}.playerbar{display:flex;justify-content:space-between;align-items:center;background:#10191f;border:1px solid var(--line);padding:10px 12px;border-radius:14px;margin:8px 0 14px}.link{color:#ff8a50;font-weight:900;background:none;border:0}.title{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:32px;line-height:1;margin:10px 0}.input{width:100%;background:#0a1115;border:1px solid #34454f;border-radius:13px;padding:14px;color:#fff;font-size:16px}.saved,.players-list{display:grid;gap:7px;margin:12px 0}.saved-row,.p-row{display:flex;align-items:center;justify-content:space-between;gap:8px;background:#111c22;border:1px solid #25343d;padding:10px 12px;border-radius:12px}.how-step{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid #1f2a31}.num{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--orange);font-weight:1000}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}.lobby-code{font-family:ui-monospace,monospace;font-size:38px;font-weight:1000;letter-spacing:.14em;text-align:center;color:var(--gold);margin:10px}.live-head{position:sticky;top:0;z-index:5;background:linear-gradient(#090d10 82%,transparent);padding-bottom:8px}.live-brand .brand{font-size:30px}.live-brand img{height:70px;width:90px;object-fit:contain}.modepill{font-size:11px;font-weight:1000;color:#ff8a50}.score{font-size:20px;font-weight:1000}.strip{display:flex;gap:7px;overflow:auto;padding:5px 0 9px;scrollbar-width:none}.chip{flex:0 0 auto;border:1px solid #31414b;border-radius:999px;padding:8px 11px;background:#111a20;color:#fff;font-size:12px;font-weight:950;cursor:pointer;box-shadow:inset 0 1px 0 #ffffff08}.chip:active{transform:scale(.97)}.chip.me{border-color:#ff6b28;color:#ff9c70}.board{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.sq{position:relative;aspect-ratio:1.02;border:0;border-radius:11px;background:var(--cream);color:#101418;padding:8px 6px;font-weight:950;font-size:clamp(11px,3.25vw,14px);line-height:1.08;box-shadow:0 6px 15px #0003;transition:transform .08s ease,filter .14s ease}.sq:active{transform:scale(.97)}.sq.hit{background:linear-gradient(155deg,#ff8a4d,var(--orange));color:#fff}.cnt{position:absolute;right:3px;top:3px;background:#0b1116;color:#fff;border-radius:999px;font-size:9px;padding:2px 4px}.star{position:absolute;left:3px;top:2px;font-size:9px}.bottom{position:sticky;bottom:0;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:7px;padding:10px 0 max(4px,env(safe-area-inset-bottom));background:linear-gradient(transparent,#090d10 22%)}.bottom .btn{padding:11px 7px;min-height:48px;font-size:14px}.remove-mode .sq{box-shadow:inset 0 0 0 2px #e65249}.remove-mode .sq.hit{background:#7f2924}.toast{position:fixed;top:max(14px,env(safe-area-inset-top));left:50%;transform:translateX(-50%) translateY(-120px);width:min(390px,calc(100% - 28px));background:#132129;border:1px solid #39505d;border-radius:14px;padding:12px 14px;font-weight:950;z-index:99;transition:.25s}.toast.show{transform:translateX(-50%) translateY(0)}.toast.mine{background:#5d2814;border-color:#d25a22}.modal{position:fixed;inset:0;background:#000b;display:none;align-items:flex-end;z-index:90}.modal.show{display:flex}.sheet{width:min(430px,100%);margin:auto;background:#10171c;border-radius:24px 24px 0 0;padding:20px 16px calc(20px + env(safe-area-inset-bottom));border:1px solid #2a3942}.result-row{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:8px;padding:11px;border-bottom:1px solid #223039}.rank{font-weight:1000;color:#ff9c70}.winner{background:#3b2b10;border-radius:12px}.center{text-align:center}.loading{position:fixed;inset:0;display:none;place-items:center;background:#081015cc;z-index:120}.loading.show{display:grid}.error{color:#ff8b83;font-size:12px}
@@ -466,16 +466,248 @@ body:has(#live.on) .app{max-width:480px;width:100%;height:100dvh;max-height:100d
 @media(max-width:350px){#home .hero .steve-portrait{right:-5px;width:58%}#home .brand{font-size:58px}#live .live-brand{grid-template-columns:minmax(0,1fr) 74px minmax(0,1fr)}#live .portrait-badge{width:72px;height:68px}}
 @media(max-height:640px){#home .hero .steve-portrait{bottom:0;max-height:100%}#live .portrait-badge{width:70px;height:54px}#live .portrait-badge .steve-portrait{height:100%;width:100%;transform:none}}
 
+/* Portrait screen layouts, grounded in the supplied Drive screen composites.
+   Live grid geometry is intentionally owned by the live interaction patch. */
+.eyebrow{font-size:11px;line-height:1.3;font-weight:750;letter-spacing:.12em;color:#b9b7aa}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.setup-screen{gap:12px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.setup-head{display:flex;align-items:center;justify-content:space-between;height:82px;min-height:82px;border-bottom:1px solid #49331f;padding:2px 6px 8px;background:radial-gradient(ellipse at 76% 85%,#97603524,transparent 60%)}
+.setup-head .brand{font-size:37px;line-height:.85;letter-spacing:-.025em}
+.setup-head .steve-portrait{width:100px;height:80px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 4px 8px #0007)}
+.screen-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px}
+.screen-nav .link{padding:8px 0;text-align:left;color:#e4dfd3;font-size:13px;letter-spacing:.06em}
+.screen-nav .brand{font-size:22px;line-height:.85}
+.setup-screen>.title{font-size:35px;margin:1px 0 2px}
+.setup-screen>.card{border-radius:15px;padding:16px;background:linear-gradient(#131c21,#0c1419)}
+.field-label{display:block;font-size:13px;font-weight:750;color:#d9d6ca;margin-bottom:9px}
+.field-note{font-size:14px;line-height:1.45;color:var(--muted);margin:0 0 15px}
+.section-label{font-size:13px;line-height:1.3;font-weight:750;letter-spacing:.06em;margin:5px 0 0;color:#d8d6cb}
+#profiles .saved{margin:0;gap:8px}
+#profiles .saved-row{border-radius:10px;background:#111a20;min-height:48px;border-color:#30404a;padding:2px 9px}
+#profiles .saved-row .link:first-child{color:#eee8d9;font-size:15px;min-height:44px}
+#profiles .saved-row .link[aria-pressed=true]{color:#191b1b}
+#profiles .saved-row:has(.link[aria-pressed=true]){background:linear-gradient(135deg,#ff934d,#ff752f);border-color:#ffa66a}
+#profiles .saved-row:has(.link[aria-pressed=true]) .link:last-child{color:#4e2110}
+.new-player-note{font-size:14px;line-height:1.45;color:#aeb7bb;margin:0}
+#private .split{gap:9px;margin:4px 0}
+#private .split>.btn{font-family:StevoDisplay,Impact,sans-serif;font-size:23px;padding:18px 8px;min-height:76px}
+#private .join-intro{margin:3px 0 14px;font-size:14px;line-height:1.4;color:#c3c9ca}
+#private #joinErr{font-size:14px;line-height:1.4;margin-top:10px;min-height:0}
+#lobby .lobby-code{font-size:38px;line-height:1.15;color:#ffbc59;margin:11px 0 17px;letter-spacing:.12em}
+#lobby .lobby-status{background:radial-gradient(ellipse at 50% 0,#65422135,#10191f 80%);padding:21px 16px}
+#lobby .lobby-status .title{font-size:29px!important;letter-spacing:.035em;line-height:1.05}
+#lobby #lobbySub{font-size:14px;line-height:1.45;margin-top:10px;color:#b9c2c6}
+#lobby .players-list{margin:0;gap:7px}
+#lobby .p-row{border-radius:10px;min-height:46px;padding:11px 13px;font-size:14px;background:#111a20}
+.lobby-controls{display:grid;gap:9px;margin-top:auto;padding-top:12px}
+#howto .guide-card{padding:14px;margin-top:0}
+.guide-steps{list-style:none;padding:0;margin:0}
+.guide-steps>li{display:flex;align-items:flex-start;gap:11px;padding:11px 0;border-bottom:1px solid #29343a}
+.guide-steps>li:first-child{padding-top:0}
+.guide-steps>li:last-child{border-bottom:0;padding-bottom:0}
+.guide-steps .num{width:27px;height:27px;flex:0 0 27px;margin-top:1px;font-size:14px;color:#121719}
+.guide-steps b{font-size:14px;line-height:1.3;letter-spacing:.01em;color:#f1ecde}
+.guide-steps p{font-size:14px;line-height:1.45;color:#b8c0c3;margin:4px 0 0}
+.guide-heading{font-size:12px;line-height:1.4;font-weight:750;letter-spacing:.1em;margin:19px 0 14px;color:#e4dfd2}
+.winning-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px 9px}
+.pattern-example{display:flex;flex-direction:column;align-items:center;gap:8px;margin:0;min-width:0;text-align:center}
+.pattern-board{width:56px;height:56px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,1fr);gap:3px;flex-shrink:0}
+.pattern-board i{display:block;background:#24343d;border-radius:2px;box-shadow:inset 0 0 0 1px #3b4b53}
+.pattern-board i.on{background:#ff812f;box-shadow:inset 0 1px 0 #ffa260,0 0 8px #ff6b2415}
+.pattern-example figcaption{font-size:14px;line-height:1.1;color:#eae5d7;font-weight:700}
+.pattern-example figcaption span{display:block;margin-top:5px;font-size:11px;line-height:1.3;font-weight:500;color:#afb9bd}
+.pattern-house{grid-column:1/-1;flex-direction:row;justify-content:center;text-align:left;gap:15px;border-top:1px solid #29343a;padding-top:15px}
+.pattern-house figcaption{font-family:StevoDisplay,Impact,sans-serif;font-size:22px;letter-spacing:.015em}
+.pattern-house figcaption span{font-family:system-ui,sans-serif;font-size:13px;color:#ffc77b}
+#howto .jackpot-guide{display:flex;align-items:flex-start;gap:12px;padding:15px 14px;border-color:#715325;background:radial-gradient(ellipse at 15% 10%,#61491c65,#151b1d 85%)}
+.guide-crown{color:#ffc64e;font-size:34px;line-height:1.05;margin-top:2px}
+.jackpot-guide h2{margin:0;color:#ffcb64;font-family:StevoDisplay,Impact,sans-serif;font-size:23px;line-height:1;letter-spacing:.035em}
+.jackpot-guide p{font-size:14px;line-height:1.45;margin:7px 0 0;color:#c3c3b7}
+.jackpot-guide b{color:#f8edce;font-weight:650}
+.guide-footnote{font-size:14px;line-height:1.4;color:#afb9bd;margin:0;padding:0 3px}
+.guide-controls{position:sticky;bottom:0;display:grid;grid-template-columns:1fr 1.7fr;gap:9px;margin-top:1px;padding:11px 0 max(5px,env(safe-area-inset-bottom));background:linear-gradient(transparent,#0a1013 12px);z-index:2}
+.guide-controls .btn{min-height:50px;font-family:StevoDisplay,Impact,sans-serif;font-size:23px;line-height:1}
+.home-help{display:flex;justify-content:center;align-items:center;gap:14px}
+.home-help .link{font-size:12px;letter-spacing:.055em;color:#c8c5b8}
+.mode-button-copy{display:flex;flex-direction:column;align-items:flex-start;gap:4px;flex:1;min-width:0}
+.home-actions>.btn .mode-button-copy b{font-size:25px;font-weight:700;line-height:1}
+.home-actions>.btn .mode-button-copy small{font-family:system-ui,sans-serif;font-size:12px;font-weight:500;line-height:1.3;letter-spacing:0;text-align:left}
+.home-actions>.btn.orange .mode-button-copy small{color:#55280e}
+.home-actions>.btn.out .mode-button-copy small{color:#b6c0c3}
+.mode-glyph{flex:0 0 27px;height:27px;display:grid;place-items:center;margin-right:13px}
+.mode-glyph svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.home-actions>.btn.personal-bests{min-height:54px;font-family:system-ui,sans-serif;font-size:13px;padding:12px 18px;justify-content:flex-start;letter-spacing:.04em}
+.home-actions>.btn.personal-bests:after{margin-left:auto}
+#results .results-hero{position:relative;isolation:isolate;height:260px;min-height:260px;overflow:hidden;align-items:flex-end;justify-content:center;padding-bottom:7px;margin-bottom:4px;background:radial-gradient(ellipse at 50% 45%,#91633347,transparent 72%)}
+.results-hero .completion-art{position:absolute;inset:0;z-index:0}
+.results-hero .completion-art>.steve-portrait{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center top;filter:drop-shadow(0 9px 15px #0009)}
+.results-hero .completion-art:has(.result-art-panel:not([hidden]))>.steve-portrait{visibility:hidden}
+.results-hero .result-art-panel{position:absolute;inset:0;margin:0;padding:0;border:0;border-radius:0;background:none}
+.results-hero .result-celebration-art{height:100%;width:100%;max-height:none;object-fit:contain;object-position:center top;border-radius:0}
+.results-hero .result-art-panel p{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.results-headline{position:relative;z-index:1;align-self:flex-end;width:100%;text-align:center;padding:25px 8px 7px;background:linear-gradient(transparent,#0b1012e8 42%)}
+.results-headline .brand{font-size:43px!important;line-height:.88;letter-spacing:-.015em;text-shadow:0 2px 6px #000}
+.results-headline .brand span{display:inline;color:#ff8738}
+.results-headline .tag{font-size:13px;line-height:1.35;letter-spacing:.05em;color:#e4d8b2;margin-top:10px!important}
+#results .result-row{font-size:14px;padding:12px 6px;gap:8px}
+#results .result-row .tiny{font-size:11px;line-height:1.35;margin-top:4px}
+#results .rank{color:#f9c575;font-family:StevoDisplay,Impact,sans-serif;font-size:25px;align-self:center;text-align:center}
+#results .winner{background:linear-gradient(135deg,#403015,#1e251c);box-shadow:inset 0 0 0 1px #a879295e}
+#results #resultList{padding:8px 10px;border-radius:15px}
+#results .result-row:last-child{border-bottom:0}
+#results .result-actions{padding-top:16px;margin-top:auto}
+#results .result-actions>.btn{width:100%;min-height:52px;font-family:StevoDisplay,Impact,sans-serif;font-size:24px}
+.sheet .title{font-family:StevoDisplay,Impact,sans-serif;letter-spacing:.025em}
+#leaveConfirm .sheet{text-align:center;max-width:380px;padding:25px 19px max(22px,env(safe-area-inset-bottom));background:linear-gradient(#1a242b,#10191e);border-color:#394952}
+.leave-symbol{width:56px;height:56px;display:grid;place-items:center;color:#ff853d;margin:0 auto 13px}
+.leave-symbol svg{width:47px;height:47px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+#leaveConfirm .sheet .title{font-family:system-ui,sans-serif;font-size:23px!important;letter-spacing:0;margin:0;font-weight:750}
+#leaveConfirm .leave-copy{font-size:14px;line-height:1.45;margin:10px 0 20px;color:#b5c0c5}
+#leaveConfirm .split{gap:9px}
+#leaveConfirm .btn{min-height:48px;font-size:14px}
+#settings .settings-label{border-radius:11px;font-size:14px;padding:12px 13px;margin:7px 0;background:#162128}
+#settings .settings-label span{max-width:calc(100% - 56px)}
+#settings .sheet>.btn{min-height:48px;font-size:14px}
+#playerDetail .player-detail-score{font-family:StevoDisplay,Impact,sans-serif;color:#ff963f;font-size:46px;line-height:1;margin:6px 0}
+#playerDetail .breakdown{font-size:14px;line-height:1.35;row-gap:11px}
+#playerDetail .achievement-row{gap:6px;margin-top:17px}
+#playerDetail .badge{font-size:12px;line-height:1.2;min-height:29px;padding:7px 10px}
+#pbs .p-row{min-height:48px;font-size:14px;gap:12px;border-radius:9px;margin:7px 0}
+#pbs .p-row b{color:#ffbf70;white-space:nowrap}
+#miniWin .sheet{background-color:#121b20;position:relative;overflow:hidden;text-align:center;width:min(360px,100%);padding:21px 17px max(20px,env(safe-area-inset-bottom));background:radial-gradient(ellipse at 50% 40%,#7a4b263d,#121b20 70%);background-color:#121b20;border-color:#9c5d306e}
+#miniWin .sheet:before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.7;background-image:radial-gradient(circle at 8% 20%,#ff893a 0 2px,transparent 3px),radial-gradient(circle at 87% 17%,#ffcd67 0 2px,transparent 3px),radial-gradient(circle at 93% 50%,#ff893a 0 2px,transparent 3px),radial-gradient(circle at 12% 56%,#b383df 0 2px,transparent 3px),radial-gradient(circle at 76% 70%,#f3bb6b 0 2px,transparent 3px)}
+#miniWin .sheet>*{position:relative;z-index:1}
+#miniWinTitle{font-family:StevoDisplay,Impact,sans-serif;font-size:46px!important;line-height:.95!important;letter-spacing:.025em;color:#ff913b;margin:0 0 7px;transform:rotate(-3deg)}
+#miniWinMessage{font-size:14px;line-height:1.35;color:#e4ddcb;margin:7px 0}
+#miniWinPoints{display:inline-block;border:1px solid #91652c;border-radius:999px;padding:6px 13px;background:#4a331a;color:#ffd184;font-size:14px;line-height:1;font-weight:750}
+#miniWinArt{display:block;width:100%;height:min(28dvh,210px);object-fit:contain;object-position:center bottom;margin:8px auto 0;filter:drop-shadow(0 7px 13px #0006)}
+#miniWinPattern.pattern-grid{width:74px;height:74px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,1fr);gap:4px;margin:8px auto 17px}
+#miniWinPattern .pattern-square{background:#273842;box-shadow:inset 0 0 0 1px #435059;border-radius:2px}
+#miniWinPattern .pattern-square.active{background:#ff8638;box-shadow:inset 0 1px 0 #ffa96a,0 0 8px #ff782329}
+#miniWinContinue{width:100%;min-height:48px;font-family:StevoDisplay,Impact,sans-serif;font-size:23px}
+.win-sheet .title{font-family:StevoDisplay,Impact,sans-serif;font-size:clamp(42px,12vw,56px)!important;line-height:1!important;letter-spacing:.035em;color:#ffbf5d;text-shadow:0 3px 0 #5d2d0d;margin:0}
+.win-sheet p{font-size:14px;line-height:1.4;color:#e2d6b6}
+@media(max-width:350px){.setup-head{height:74px;min-height:74px}.setup-head .brand{font-size:33px}.setup-head .steve-portrait{height:72px;width:87px}.setup-screen>.title{font-size:31px}.setup-screen>.card{padding:14px}.winning-grid{gap:14px 6px}.pattern-example figcaption{font-size:13px}.pattern-example figcaption span{font-size:10px}.pattern-house figcaption{font-size:21px}.pattern-house figcaption span{font-size:12px}.results-headline .brand{font-size:36px!important}}
+@media(max-height:640px){#results .results-hero{height:220px;min-height:220px}#miniWinArt{height:24dvh;max-height:155px}#miniWinPattern.pattern-grid{height:64px;width:64px;margin:7px auto 13px}#miniWinTitle{font-size:39px!important}.guide-controls .btn{min-height:46px}}
+
+/* Immediate stamps stay readable while confirmed scores arrive from the API. */
+[hidden]{display:none!important}
+.tap-sync{border:0;background:transparent;color:#ffdb99;font-size:10px;line-height:1.2;padding:2px 0;text-align:right;min-height:18px;text-decoration:underline}
+.tap-sync:disabled{opacity:1;text-decoration:none}
+#live .sq,#live .bonus-cell{flex-direction:column;gap:3px}
+#live .cell-stamp{display:block;flex:0 0 auto;width:32px;height:32px;object-fit:contain;object-position:center;filter:drop-shadow(0 1px 1px #0003)}
+#live .cell-label{display:block;max-width:100%;overflow-wrap:normal}
+#live .sq.hit{font-size:clamp(12px,3.25vw,15px)!important;padding:4px 3px!important}
+#live .bonus-cell{display:flex;align-items:center;justify-content:center;position:relative}
+#live .bonus-cell.hit{gap:1px;padding:3px!important;font-size:11px!important}
+#live .bonus-cell.hit .bonus-type{position:absolute;top:3px;left:5px;font-size:6px!important;margin:0}
+#live .bonus-cell .cell-stamp{width:24px;height:22px}
+#live .potd-stamp{width:33px;height:38px;object-fit:contain;margin-left:auto;flex-shrink:0}
+#live .pending-hit{box-shadow:inset 0 0 0 2px #ffe8b5!important}
+#live .pending-hit:after{content:'';position:absolute;left:4px;top:4px;width:5px;height:5px;border-radius:50%;background:#fff5da;box-shadow:0 0 0 2px #ab682744}
+#live .potd-card{position:relative}
+@media(max-height:720px){#live .cell-stamp{width:26px;height:26px}#live .sq.hit{font-size:12px!important;gap:2px}#live .bonus-cell.hit{font-size:10px!important}#live .bonus-cell .cell-stamp{height:19px;width:21px}}
+@media(max-height:640px){#live .cell-stamp{width:22px;height:22px}#live .sq.hit{font-size:11px!important;padding:2px!important;gap:1px}#live .bonus-cell.hit{font-size:9px!important}#live .bonus-cell .cell-stamp{height:17px;width:20px}}
+@media(prefers-reduced-motion:reduce){button,.toast{transition:none!important}}
+
+h1.brand{margin:0}
 </style></head><body><div id="toast" class="toast" role="status" aria-live="polite"></div><div id="loading" class="loading" role="status" aria-live="polite">SYNCING…</div><main class="app">
-<section id="home" class="screen on" aria-label="StevO BingO home"><div class="hero"><div class="hero-copy"><div class="brand">StevO <span>BingO</span></div><div class="tag" style="margin-top:18px">SAME STEVE.<br>DIFFERENT DAY.</div></div><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div><div id="who" class="playerbar"></div><div id="rejoinWrap" style="display:none"><button class="btn out" style="width:100%;margin-bottom:8px" onclick="rejoin()">REJOIN GAME</button><button class="link" style="width:100%;color:#ff746b;padding:8px 0 2px" onclick="openLeaveConfirm()">LEAVE CURRENT GAME</button></div><div class="home-actions"><button class="btn orange" onclick="chooseMode('daily')">DAILY PLAY</button><div class="mode-note">18:00–00:00 London time</div><button class="btn out" onclick="chooseMode('private')">PRIVATE PLAY</button><button class="link" onclick="showPBs()">PERSONAL BESTS</button></div></section>
-<section id="profiles" class="screen"><button class="link" onclick="go('home')">‹ BACK</button><div class="title">YOUR PLAYER</div><div class="card"><input id="nameInput" class="input" maxlength="24" placeholder="Enter your name" aria-label="Your name" autocomplete="nickname"><button class="btn orange" style="width:100%;margin-top:10px" onclick="savePlayer()">CONTINUE</button></div><div class="title" style="font-size:20px">SAVED PLAYERS</div><div id="savedList" class="saved"></div></section>
-<section id="howto" class="screen"><div class="hero"><div class="brand" style="font-size:30px">StevO <span>BingO</span></div><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div><div class="title">HOW TO PLAY</div><div class="card"><div class="how-step"><div class="num">1</div><div><b>SPOT IT</b><div class="muted tiny">Tap a square when Steve says or does it.</div></div></div><div class="how-step"><div class="num">2</div><div><b>WIN THE 4×4</b><div class="muted tiny">Complete all 16 main squares to win. Lines, corners and X earn bonus points on the way.</div></div></div><div class="how-step" style="border:0"><div class="num">3</div><div><b>CHASE THE JACKPOT</b><div class="muted tiny">Word of the Day + the 3 bottom bonus cells score extra. Collect all 20 active items for the Jackpot.</div></div></div></div><button class="btn orange" style="margin-top:auto" onclick="finishHow()">LET'S PLAY</button></section>
-<section id="private" class="screen"><button class="link" onclick="go('home')">‹ BACK</button><div class="title">PRIVATE PLAY</div><div class="split"><button class="btn orange" onclick="createPrivate()">CREATE GAME</button><button class="btn out" onclick="openJoin()">JOIN GAME</button></div><div id="joinBox" class="card" style="display:none;margin-top:12px"><input id="codeInput" class="input center" maxlength="5" placeholder="K7FPM" aria-label="Five-character game code" autocapitalize="characters" autocomplete="off" style="text-transform:uppercase;font-size:25px;letter-spacing:.12em"><button class="btn orange" style="width:100%;margin-top:10px" onclick="joinPrivate()">JOIN</button><div id="joinErr" class="error"></div></div></section>
-<section id="lobby" class="screen"><div class="live-brand"><div><div class="brand" style="font-size:30px">StevO <span>BingO</span></div><div id="lobbyMode" class="modepill"></div></div><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div><div id="codeCard" class="card center" style="display:none"><div class="tiny muted">GAME CODE</div><div id="lobbyCode" class="lobby-code"></div><div class="split"><button class="btn out" onclick="copyCode()">COPY</button><button class="btn out" onclick="shareCode()">SHARE</button></div></div><div class="card center" style="margin-top:10px"><div id="lobbyTitle" class="title" style="font-size:26px;margin:2px 0"></div><div id="lobbySub" class="muted"></div></div><div class="title" style="font-size:20px">PLAYERS JOINED</div><div id="lobbyPlayers" class="players-list"></div><button id="startPrivateBtn" class="btn orange" style="display:none;margin-top:auto" onclick="startPrivate()">START GAME</button><button class="btn out" style="margin-top:10px" onclick="leaveToHome()">LEAVE LOBBY</button></section>
-<section id="live" class="screen" aria-label="Live game"><div class="live-head"><div class="live-brand"><div class="brand-copy"><div class="brand" aria-label="StevO BingO">StevO <span>BingO</span></div><div id="liveMode" class="modepill"></div></div><div class="portrait-badge"><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div><div class="score-wrap"><span class="score-label">YOUR SCORE</span><div id="myScore" class="score">0 PTS</div></div></div><div class="tiny muted">PLAYING NOW</div><div id="strip" class="strip"></div></div><button id="potdCard" class="potd-card" onclick="tapPotd()"><div><div class="potd-label">★ WORD OF THE DAY</div><div id="potdPhrase" class="potd-phrase"></div></div><div id="potdCount" class="potd-count">+20</div></button><div id="boardWrap"><div id="board" class="board"></div></div><div class="bonus-title">ACTIONS & CLOTHES</div><div id="bonusStrip" class="bonus-strip"></div><div class="bottom"><button id="removeBtn" class="btn out" aria-label="Remove hit" title="Remove hit" aria-pressed="false" onclick="toggleRemove()"><span class="control-icon" aria-hidden="true">−</span><span>Remove</span></button><button id="settingsBtn" class="btn out" aria-label="Settings" title="Settings" onclick="openSettings()"><span class="control-icon" aria-hidden="true">⚙</span><span>Settings</span></button><button id="leaveGameBtn" class="btn red" onclick="confirmLeave()"><span class="control-icon" aria-hidden="true">↗</span><span>Leave</span></button></div></section>
-<section id="results" class="screen"><div class="hero"><div><div class="brand" style="font-size:32px">GAME <span>COMPLETE</span></div><div id="winnerText" class="tag" style="margin-top:15px"></div></div><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div><div id="resultArtPanel" class="result-art-panel" hidden><img id="resultCelebrationArt" class="result-celebration-art" alt=""><p id="resultCelebrationCaption"></p></div><div class="title" style="font-size:22px">FINAL SCORES</div><div id="resultList" class="card"></div><button class="btn orange" style="margin-top:auto" onclick="clearSession()">BACK TO HOME</button></section>
-<section id="pbs" class="screen"><button class="link" onclick="go('home')">‹ BACK</button><div class="title">PERSONAL BESTS</div><div id="pbList" class="card"></div></section></main>
-<div id="winCelebration" class="modal" role="dialog" aria-modal="true" aria-labelledby="winCelebrationTitle"><div class="sheet win-sheet"><h2 id="winCelebrationTitle" class="title"></h2><p id="winCelebrationPlayer"></p><img id="winCelebrationArt" alt="" class="win-art"><button class="btn orange" style="width:100%" onclick="closeModal('winCelebration')">SEE FINAL SCORES</button></div></div><div id="playerDetail" class="modal" role="dialog" aria-modal="true" aria-label="Player score details"><div class="sheet"><div id="playerDetailName" class="title" style="font-size:28px;margin-top:0"></div><div id="playerDetailScore" class="player-detail-score"></div><div id="playerDetailMeta" class="muted tiny" style="margin-top:4px"></div><div id="playerBreakdown" class="breakdown"></div><div id="playerAchievements" class="achievement-row"></div><button class="btn" style="width:100%;margin-top:18px" onclick="closePlayerDetail()">CLOSE</button></div></div><div id="leaveConfirm" class="modal" role="dialog" aria-modal="true" aria-label="Leave game?"><div class="sheet"><div class="title" style="font-size:26px">LEAVE GAME?</div><div class="muted" style="line-height:1.45;margin:4px 0 16px">Are you sure? Your saved player stays on this device, but this active game will be removed from the home screen.</div><div class="split"><button class="btn out" onclick="closeLeaveConfirm()">CANCEL</button><button class="btn red" onclick="leaveCurrentGame()">LEAVE</button></div></div></div><div id="settings" class="modal" role="dialog" aria-modal="true" aria-label="Settings"><div class="sheet"><div class="title" style="font-size:24px">SETTINGS</div><label class="p-row settings-label" for="soundToggle"><span>Sound effects</span><input id="soundToggle" type="checkbox" checked></label><label class="p-row settings-label" for="vibeToggle"><span>Vibration</span><input id="vibeToggle" type="checkbox" checked></label><button class="btn out" style="width:100%;margin-top:8px" onclick="goHowFromSettings()">HOW TO PLAY</button><button id="endPrivateBtn" class="btn red" style="width:100%;margin-top:8px;display:none" onclick="endPrivate()">END PRIVATE GAME</button><button class="btn" style="width:100%;margin-top:8px" onclick="closeSettings()">CLOSE</button></div></div>
+<section id="home" class="screen on" aria-label="StevO BingO home">
+  <div class="hero"><div class="hero-copy"><h1 class="brand">StevO <span>BingO</span></h1><div class="tag" style="margin-top:18px">SAME STEVE.<br>DIFFERENT DAY.</div></div><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div>
+  <div id="who" class="playerbar"></div>
+  <div id="rejoinWrap" style="display:none"><button class="btn out" style="width:100%;margin-bottom:8px" onclick="rejoin()">REJOIN GAME</button><button class="link" style="width:100%;color:#ff746b;padding:8px 0 2px" onclick="openLeaveConfirm()">LEAVE CURRENT GAME</button></div>
+  <div class="home-actions">
+    <button class="btn orange" onclick="chooseMode('daily')"><span class="mode-glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M7 3v4M17 3v4M3 10h18M7 14h2M13 14h2M7 18h2"></path></svg></span><span class="mode-button-copy"><b>DAILY PLAY</b><small>18:00–00:00 London time</small></span></button>
+    <button class="btn out" onclick="chooseMode('private')"><span class="mode-glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"></circle><path d="M3 21v-2a6 6 0 0 1 12 0v2M16 4a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 4v2"></path></svg></span><span class="mode-button-copy"><b>PRIVATE PLAY</b><small>Join or create a game</small></span></button>
+    <button class="btn out personal-bests" onclick="showPBs()"><span class="mode-glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10v5a5 5 0 0 1-10 0V3ZM7 5H3v2a4 4 0 0 0 4 4M17 5h4v2a4 4 0 0 1-4 4M12 13v5M8 21h8M9 18h6"></path></svg></span>PERSONAL BESTS</button>
+  </div>
+  <div class="home-help"><button class="link" onclick="showHowto('home','return')">HOW TO PLAY</button></div>
+</section>
+
+<section id="profiles" class="screen setup-screen" aria-labelledby="profileTitle">
+  <div class="screen-nav"><button class="link" onclick="go('home')">‹ BACK</button><div class="brand" aria-label="StevO BingO">StevO <span>BingO</span></div></div>
+  <div class="eyebrow">MAKE IT YOUR GAME</div><h1 id="profileTitle" class="title">SELECT PLAYER</h1>
+  <div class="card"><label class="field-label" for="nameInput">New player</label><input id="nameInput" class="input" maxlength="24" placeholder="Enter your name" autocomplete="nickname"><button class="btn orange" style="width:100%;margin-top:10px" onclick="savePlayer()">CONTINUE</button></div>
+  <h2 class="section-label">OR CHOOSE A SAVED PLAYER</h2><div id="savedList" class="saved"></div>
+  <p class="new-player-note">Players are saved on this device.</p>
+</section>
+
+<section id="howto" class="screen setup-screen" aria-labelledby="howtoTitle">
+  <div class="setup-head">
+    <div class="brand">StevO <span>BingO</span></div>
+    <img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async">
+  </div>
+  <div class="eyebrow">EYES DOWN. EARS OPEN.</div>
+  <h1 id="howtoTitle" class="title">HOW TO PLAY</h1>
+  <div class="card guide-card">
+    <ol class="guide-steps">
+      <li><span class="num" aria-hidden="true">1</span><div><b>SPOT IT. TAP IT.</b><p>Tap a square each time Steve says or does it. An orange square means you’ve collected it.</p></div></li>
+      <li><span class="num" aria-hidden="true">2</span><div><b>PICK UP MINI WINS</b><p>Make lines, collect the four corners or complete an X. These earn extra points while the game keeps going.</p></div></li>
+      <li><span class="num" aria-hidden="true">3</span><div><b>FILL THE 4×4</b><p>Collect all 16 main squares for a full house. The first full house wins and ends the game.</p></div></li>
+    </ol>
+    <h2 class="guide-heading">WINNING WAYS</h2>
+    <div class="winning-grid">
+      <figure class="pattern-example"><div class="pattern-board" role="img" aria-label="Horizontal line: collect all four squares in any row.">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div><figcaption>Horizontal<span>1st line +25</span></figcaption></figure>
+      <figure class="pattern-example"><div class="pattern-board" role="img" aria-label="Vertical line: collect all four squares in any column.">
+        <i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i>
+      </div><figcaption>Vertical<span>1st line +25</span></figcaption></figure>
+      <figure class="pattern-example"><div class="pattern-board" role="img" aria-label="Diagonal line: collect four squares diagonally from one corner to the opposite corner.">
+        <i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i>
+      </div><figcaption>Diagonal<span>1st line +25</span></figcaption></figure>
+      <figure class="pattern-example"><div class="pattern-board" role="img" aria-label="Two lines: collect any two complete rows, columns or diagonals. This example shows two rows.">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div><figcaption>2 lines<span>Another +25</span></figcaption></figure>
+      <figure class="pattern-example"><div class="pattern-board" role="img" aria-label="Four corners: collect the square in each corner of the 4 by 4 board.">
+        <i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i>
+      </div><figcaption>4 corners<span>+25 points</span></figcaption></figure>
+      <figure class="pattern-example"><div class="pattern-board" role="img" aria-label="X: collect all eight squares on both diagonals of the 4 by 4 board.">
+        <i class="on"></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i>
+      </div><figcaption>X / cross<span>+40 points</span></figcaption></figure>
+      <figure class="pattern-example pattern-house"><div class="pattern-board" role="img" aria-label="Full house: collect every one of the 16 squares on your main board.">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
+      </div><figcaption>FULL HOUSE<span>16 / 16 — board complete</span></figcaption></figure>
+    </div>
+  </div>
+  <div class="card jackpot-guide"><span class="guide-crown" aria-hidden="true">♛</span><div><h2>CHASE THE JACKPOT</h2><p>Collect all 16 main squares, <b>Word of the Day</b> and all <b>3 Actions & Clothes</b> tiles for <b>20 / 20</b>. Collect the four extras before your final main square, which ends the game.</p></div></div>
+  <p class="guide-footnote">Tapped by mistake? Choose <b>Remove</b>, then tap the collected square once.</p>
+  <div class="guide-controls"><button class="btn out" onclick="backFromHowto()">‹ BACK</button><button id="howtoContinue" class="btn orange" onclick="finishHow()">CONTINUE</button></div>
+</section>
+
+<section id="private" class="screen setup-screen" aria-labelledby="privateTitle">
+  <div class="screen-nav"><button class="link" onclick="go('home')">‹ BACK</button><div class="brand" aria-label="StevO BingO">StevO <span>BingO</span></div></div>
+  <div class="eyebrow">SAME STEVE. YOUR CROWD.</div><h1 id="privateTitle" class="title">PRIVATE PLAY</h1>
+  <p class="field-note">Create a game and share its code, or join your friends.</p>
+  <div class="split"><button class="btn orange" onclick="createPrivate()">CREATE GAME</button><button class="btn out" onclick="openJoin()">JOIN GAME</button></div>
+  <div id="joinBox" class="card" style="display:none;margin-top:12px"><label class="field-label" for="codeInput">Game code</label><p class="join-intro">Enter the five-character code from the host.</p><input id="codeInput" class="input center" maxlength="5" placeholder="K7FPM" autocapitalize="characters" autocomplete="off" style="text-transform:uppercase;font-size:25px;letter-spacing:.12em"><button class="btn orange" style="width:100%;margin-top:10px" onclick="joinPrivate()">JOIN GAME</button><div id="joinErr" class="error" role="status"></div></div>
+</section>
+
+<section id="lobby" class="screen setup-screen" aria-labelledby="lobbyTitle">
+  <div class="setup-head"><div><div class="brand">StevO <span>BingO</span></div><div id="lobbyMode" class="modepill" style="margin-top:10px"></div></div><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div>
+  <div id="codeCard" class="card center" style="display:none"><div class="eyebrow">GAME CODE</div><div id="lobbyCode" class="lobby-code"></div><div class="split"><button class="btn out" onclick="copyCode()">COPY</button><button class="btn out" onclick="shareCode()">SHARE</button></div></div>
+  <div class="card center lobby-status"><h1 id="lobbyTitle" class="title" style="margin:2px 0"></h1><div id="lobbySub" class="muted"></div></div>
+  <h2 class="section-label">PLAYERS JOINED</h2><div id="lobbyPlayers" class="players-list"></div>
+  <div class="lobby-controls"><button id="startPrivateBtn" class="btn orange" style="display:none" onclick="startPrivate()">START GAME</button><button class="btn out" onclick="leaveToHome()">BACK TO HOME</button></div>
+</section>
+
+<section id="live" class="screen" aria-label="Live game"><div class="live-head"><div class="live-brand"><div class="brand-copy"><div class="brand" aria-label="StevO BingO">StevO <span>BingO</span></div><div id="liveMode" class="modepill"></div></div><div class="portrait-badge"><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div><div class="score-wrap"><span class="score-label">YOUR SCORE</span><div id="myScore" class="score">0 PTS</div><button id="tapSync" class="tap-sync" hidden onclick="drainTaps()" aria-live="polite">Saving…</button></div></div><div class="tiny muted">PLAYING NOW</div><div id="strip" class="strip"></div></div><button id="potdCard" class="potd-card" onclick="tapPotd()"><div><div class="potd-label">★ WORD OF THE DAY</div><div id="potdPhrase" class="potd-phrase"></div></div><img id="potdStamp" class="potd-stamp" src="artwork/characters/header-01-king.webp" alt="" aria-hidden="true" hidden><div id="potdCount" class="potd-count">+20</div></button><div id="boardWrap"><div id="board" class="board"></div></div><div class="bonus-title">ACTIONS & CLOTHES</div><div id="bonusStrip" class="bonus-strip"></div><div class="bottom"><button id="removeBtn" class="btn out" aria-label="Remove hit" title="Remove hit" aria-pressed="false" onclick="toggleRemove()"><span class="control-icon" aria-hidden="true">−</span><span>Remove</span></button><button id="settingsBtn" class="btn out" aria-label="Settings" title="Settings" onclick="openSettings()"><span class="control-icon" aria-hidden="true">⚙</span><span>Settings</span></button><button id="leaveGameBtn" class="btn red" onclick="confirmLeave()"><span class="control-icon" aria-hidden="true">↗</span><span>Leave</span></button></div></section>
+<section id="results" class="screen" aria-labelledby="resultsTitle">
+  <div class="hero results-hero">
+    <div class="completion-art"><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"><div id="resultArtPanel" class="result-art-panel" hidden><img id="resultCelebrationArt" class="result-celebration-art" alt=""><p id="resultCelebrationCaption"></p></div></div>
+    <div class="results-headline"><h1 id="resultsTitle" class="brand">GAME <span>COMPLETE</span></h1><div id="winnerText" class="tag"></div></div>
+  </div>
+  <h2 class="section-label" style="margin:10px 0 12px;text-align:center">FINAL SCORES</h2><div id="resultList" class="card"></div>
+  <div class="result-actions"><button class="btn orange" onclick="clearSession()">BACK TO HOME</button></div>
+</section>
+
+<section id="pbs" class="screen setup-screen" aria-labelledby="pbsTitle">
+  <div class="screen-nav"><button class="link" onclick="go('home')">‹ BACK</button><div class="brand" aria-label="StevO BingO">StevO <span>BingO</span></div></div>
+  <div class="eyebrow">YOUR STEVE STATS</div><h1 id="pbsTitle" class="title">PERSONAL BESTS</h1><div id="pbList" class="card"></div>
+</section>
+</main>
+<div id="miniWin" class="modal" role="dialog" aria-modal="true" aria-labelledby="miniWinTitle"><div class="sheet"><h2 id="miniWinTitle" class="title"></h2><p id="miniWinMessage"></p><span id="miniWinPoints"></span><img id="miniWinArt" alt=""><div id="miniWinPattern" class="pattern-grid" role="img"></div><button id="miniWinContinue" class="btn orange" onclick="dismissMiniWin()">NICE ONE! KEEP PLAYING</button></div></div><div id="winCelebration" class="modal" role="dialog" aria-modal="true" aria-labelledby="winCelebrationTitle"><div class="sheet win-sheet"><h2 id="winCelebrationTitle" class="title"></h2><p id="winCelebrationPlayer"></p><img id="winCelebrationArt" alt="" class="win-art"><button class="btn orange" style="width:100%" onclick="closeModal('winCelebration')">SEE FINAL SCORES</button></div></div><div id="playerDetail" class="modal" role="dialog" aria-modal="true" aria-label="Player score details"><div class="sheet"><div id="playerDetailName" class="title" style="font-size:28px;margin-top:0"></div><div id="playerDetailScore" class="player-detail-score"></div><div id="playerDetailMeta" class="muted tiny" style="margin-top:4px"></div><div id="playerBreakdown" class="breakdown"></div><div id="playerAchievements" class="achievement-row"></div><button class="btn" style="width:100%;margin-top:18px" onclick="closePlayerDetail()">CLOSE</button></div></div><div id="leaveConfirm" class="modal" role="dialog" aria-modal="true" aria-labelledby="leaveTitle"><div class="sheet"><div class="leave-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 4h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-8M14 12H3M7 8l-4 4 4 4"></path></svg></div><h2 id="leaveTitle" class="title">Leave game?</h2><p class="leave-copy">Your player stays saved on this device. This game will be removed from the home screen.</p><div class="split"><button class="btn out" onclick="closeLeaveConfirm()">STAY</button><button class="btn red" onclick="leaveCurrentGame()">LEAVE GAME</button></div></div></div>
+<div id="settings" class="modal" role="dialog" aria-modal="true" aria-label="Settings"><div class="sheet"><div class="title" style="font-size:24px">SETTINGS</div><label class="p-row settings-label" for="soundToggle"><span>Sound effects</span><input id="soundToggle" type="checkbox" checked></label><label class="p-row settings-label" for="vibeToggle"><span>Vibration</span><input id="vibeToggle" type="checkbox" checked></label><button class="btn out" style="width:100%;margin-top:8px" onclick="goHowFromSettings()">HOW TO PLAY</button><button id="endPrivateBtn" class="btn red" style="width:100%;margin-top:8px;display:none" onclick="endPrivate()">END PRIVATE GAME</button><button class="btn" style="width:100%;margin-top:8px" onclick="closeSettings()">CLOSE</button></div></div>
 <script>
 const API='https://spipsztjsgicfkkjlyec.supabase.co/functions/v1/steve-bingo-beta',$=id=>document.getElementById(id);let profiles=JSON.parse(localStorage.sbProfiles||'[]'),current=localStorage.sbCurrent||'',pending=null,auth=JSON.parse(localStorage.sbSession||'null'),S=null,removeMode=false,poll=null,lastNote=+(localStorage.sbLastNote||0),tapGuard={},lastPlayerStripKey='';
 
@@ -533,8 +765,8 @@ function syncGameArtwork(){
   document.querySelectorAll('img.steve-portrait').forEach(img=>setArtwork(img,src));
 }
 
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function go(id){const next=$(id);if(!next)return;syncGameArtwork();const changed=!next.classList.contains('on');document.querySelectorAll('.screen').forEach(x=>x.classList.remove('on'));next.classList.add('on');window.scrollTo(0,0);if(changed){next.setAttribute('tabindex','-1');next.focus({preventScroll:true})}}async function call(action,data={}){const r=await fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action,...data})});return await r.json()}function prof(){return profiles.find(x=>x.id===current)||null}function persist(){localStorage.sbProfiles=JSON.stringify(profiles);localStorage.sbCurrent=current;renderWho()}function renderWho(){const p=prof();$('who').innerHTML=p?'<span><b>'+esc(p.name)+'</b><br><span class="tiny muted">Saved player</span></span><button class="link" onclick="showProfiles()">CHANGE</button>':'<span class="muted">No saved player</span><button class="link" onclick="showProfiles()">SET PLAYER</button>';$('rejoinWrap').style.display=auth?'block':'none'}function showProfiles(){renderSaved();go('profiles')}function renderSaved(){$('savedList').innerHTML=profiles.length?profiles.map(p=>'<div class="saved-row"><button class="link" onclick="selectPlayer(\''+p.id+'\')">'+esc(p.name)+'</button><button class="link" onclick="delPlayer(\''+p.id+'\')">DELETE</button></div>').join(''):'<div class="muted tiny">No saved players yet.</div>'}function savePlayer(){const name=$('nameInput').value.trim();if(!name)return;const p={id:crypto.randomUUID(),name,onboarded:false};profiles.push(p);current=p.id;persist();$('nameInput').value='';go('howto')}function selectPlayer(id){current=id;persist();const p=prof();if(p&&!p.onboarded)go('howto');else resumePending()}function delPlayer(id){profiles=profiles.filter(p=>p.id!==id);if(current===id)current='';persist();renderSaved()}function chooseMode(mode){pending=mode;const p=prof();if(!p)return showProfiles();if(!p.onboarded)return go('howto');resumePending()}function finishHow(){const p=prof();if(p){p.onboarded=true;persist()}resumePending()}function resumePending(){const x=pending;pending=null;if(x==='daily')enterDaily();else if(x==='private')go('private');else go('home')}function openJoin(){$('joinBox').style.display='block';$('codeInput').focus()}
-async function createPrivate(){const p=prof();busy(1);const r=await call('create_private',{profileId:p.id,name:p.name});busy(0);if(!r.ok)return alert(r.error);setAuth(r.auth);S=r;renderState()}async function joinPrivate(){const p=prof(),code=$('codeInput').value.trim().toUpperCase();$('joinErr').textContent='';busy(1);const r=await call('join_private',{profileId:p.id,name:p.name,code});busy(0);if(!r.ok){$('joinErr').textContent=r.error;return}if(r.complete){S=r;return showResults()}setAuth(r.auth);S=r;renderState()}async function enterDaily(){const p=prof();busy(1);const d=await call('daily');if(!d.ok){busy(0);return alert(d.error||'Could not load today’s game.')}if(d.game?.status==='complete'){busy(0);S=d;return showResults()}if(auth&&auth.mode==='daily'&&auth.gameId===d.game.id){busy(0);return rejoin()}const r=await call('join_daily',{profileId:p.id,name:p.name});busy(0);if(!r.ok)return alert(r.error);if(r.complete){S=r;if(r.auth)setAuth(r.auth);return showResults()}setAuth(r.auth);S=r;renderState()}function setAuth(a){auth=a;localStorage.sbSession=JSON.stringify(a);renderWho();startPoll()}async function rejoin(){if(!auth)return;busy(1);const r=await call('rejoin',auth);busy(0);if(!r.ok){auth=null;localStorage.removeItem('sbSession');renderWho();return alert(r.error)}S=r;renderState();startPoll()}function startPoll(){clearInterval(poll);poll=setInterval(refresh,1000)}function visibleStateKey(r){
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function go(id){if(id==='home')pending=null;const next=$(id);if(!next)return;syncGameArtwork();const changed=!next.classList.contains('on');document.querySelectorAll('.screen').forEach(x=>x.classList.remove('on'));next.classList.add('on');window.scrollTo(0,0);if(changed){next.setAttribute('tabindex','-1');next.focus({preventScroll:true})}}async function call(action,data={},signal){const r=await fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action,...data}),signal});return await r.json()}function prof(){return profiles.find(x=>x.id===current)||null}function persist(){localStorage.sbProfiles=JSON.stringify(profiles);localStorage.sbCurrent=current;renderWho()}function renderWho(){const p=prof();$('who').innerHTML=p?'<span><b>'+esc(p.name)+'</b><br><span class="tiny muted">Saved player</span></span><button class="link" onclick="showProfiles()">CHANGE</button>':'<span class="muted">No saved player</span><button class="link" onclick="showProfiles()">SET PLAYER</button>';$('rejoinWrap').style.display=auth?'block':'none'}function showProfiles(){renderSaved();go('profiles')}function renderSaved(){$('savedList').innerHTML=profiles.length?profiles.map(p=>'<div class="saved-row"><button class="link" aria-pressed="'+(p.id===current)+'" onclick="selectPlayer(\''+p.id+'\')">'+esc(p.name)+'</button><button class="link" onclick="delPlayer(\''+p.id+'\')">DELETE</button></div>').join(''):'<div class="muted tiny">No saved players yet.</div>'}function delPlayer(id){profiles=profiles.filter(p=>p.id!==id);if(current===id)current='';persist();renderSaved()}function resumePending(){const x=pending;pending=null;if(x==='daily')enterDaily();else if(x==='private')go('private');else go('home')}function openJoin(){$('joinBox').style.display='block';$('codeInput').focus()}
+async function createPrivate(){return withBusyRequest(async()=>{const p=prof();const r=await call('create_private',{profileId:p.id,name:p.name});if(!r.ok)return alert(r.error);setAuth(r.auth);S=r;renderState()})}async function joinPrivate(){return withBusyRequest(async()=>{const p=prof(),code=$('codeInput').value.trim().toUpperCase();$('joinErr').textContent='';const r=await call('join_private',{profileId:p.id,name:p.name,code});if(!r.ok){$('joinErr').textContent=r.error;return}if(r.complete){S=r;return showResults()}setAuth(r.auth);S=r;renderState()})}async function enterDaily(){return withBusyRequest(async()=>{const p=prof();const d=await call('daily');if(!d.ok){return alert(d.error||'Could not load today’s game.')}if(d.game?.status==='complete'){S=d;return showResults()}if(auth&&auth.mode==='daily'&&auth.gameId===d.game.id){return rejoinCurrent()}const r=await call('join_daily',{profileId:p.id,name:p.name});if(!r.ok)return alert(r.error);if(r.complete){S=r;if(r.auth)setAuth(r.auth);return showResults()}setAuth(r.auth);S=r;renderState()})}function setAuth(a){if(sessionKey(a)!==sessionKey(auth))resetCelebrations();stateRevision++;auth=a;localStorage.sbSession=JSON.stringify(a);renderWho();startPoll()}async function rejoin(){return withBusyRequest(rejoinCurrent)}async function rejoinCurrent(){if(!auth)return;if(queuedTaps.length&&!await finishPendingTaps())return;const r=await call('rejoin',auth);if(!r.ok){auth=null;localStorage.removeItem('sbSession');renderWho();return alert(r.error)}S=r;renderState();startPoll()}function startPoll(){clearInterval(poll);poll=setInterval(refresh,1800);if(queuedTaps.length)void drainTaps()}function visibleStateKey(r){
   return JSON.stringify([
     r?.game?.status,r?.game?.winner_player_id,r?.game?.started_at,r?.game?.ended_at,
     r?.me?.score,r?.me?.line_count,r?.me?.counts,r?.me?.achievements,
@@ -542,17 +774,7 @@ async function createPrivate(){const p=prof();busy(1);const r=await call('create
     (r?.notifications||[]).map(n=>n.id)
   ])
 }
-async function refresh(){
-  if(!auth||document.hidden)return;
-  try{
-    const r=await call('state',auth);
-    if(r.ok){
-      const changed=visibleStateKey(r)!==visibleStateKey(S);
-      S=r;
-      if(changed)renderState(false)
-    }
-  }catch(e){}
-}function renderState(nav=true){if(!S?.game)return;syncGameArtwork();processNotes();const g=S.game;if(g.status==='complete')return showResults();if(g.status==='lobby'){renderLobby();if(nav)go('lobby');return}renderLive();if(nav)go('live')}
+function renderState(nav=true){if(!S?.game)return;syncGameArtwork();processNotes();const g=S.game;if(g.status==='complete')return showResults();if(g.status==='lobby'){renderLobby();if(nav)go('lobby');return}renderLive();if(nav)go('live')}
 function renderLobby(){const g=S.game,isPriv=g.mode==='private';$('lobbyMode').textContent=isPriv?'PRIVATE LOBBY':'DAILY LOBBY';$('codeCard').style.display=isPriv?'block':'none';$('lobbyCode').textContent=g.code||'';$('startPrivateBtn').style.display=isPriv&&auth?.hostToken?'block':'none';$('lobbyTitle').textContent=isPriv?'WAITING FOR HOST':'TODAY’S GAME';$('lobbySub').textContent=isPriv?'Share the code. Late joins stay open after start.':'Starts automatically at 18:00 London time.';$('lobbyPlayers').innerHTML=S.players.map(p=>'<div class="p-row"><b>'+esc(p.name)+'</b><span class="muted tiny">'+p.score+' pts</span></div>').join('')}function renderLive(){
   const g=S.game,me=S.me;if(!me)return;
   $('liveMode').textContent=g.mode==='daily'?'DAILY • LIVE':'PRIVATE • '+g.code;
@@ -562,13 +784,16 @@ function renderLobby(){const g=S.game,isPriv=g.mode==='private';$('lobbyMode').t
     $('strip').innerHTML=S.players.map(p=>'<button class="chip '+(p.id===me.id?'me':'')+'" data-player-id="'+p.id+'">'+esc(p.name)+' '+p.score+' • '+p.line_count+'L</button>').join('');
     lastPlayerStripKey=stripKey
   }
-  const counts=me.counts||Array(S.phrases?.length||30).fill(0),board=(me.board||[]).slice(0,16),pot=g.phrase_of_day,pc=counts[pot]||0;
+  const counts=projectedCounts(),board=(me.board||[]).slice(0,16),pot=g.phrase_of_day,pc=counts[pot]||0;
   $('potdPhrase').textContent=S.phrases[pot]||'';
   $('potdCount').textContent=pc>0?'×'+pc:'+20';
   $('potdCard').classList.toggle('hit',pc>0);$('potdCard').setAttribute('aria-pressed',String(pc>0));$('potdCard').setAttribute('aria-label','Word of the Day: '+(S.phrases[pot]||'')+', '+pc+' hits'+(removeMode?', remove latest hit':''));
-  $('board').innerHTML=board.map(ph=>{const c=counts[ph]||0,hit=c>0;return '<button class="sq '+(hit?'hit':'')+'" aria-pressed="'+hit+'" aria-label="'+esc(S.phrases[ph]+', '+c+' hits'+(removeMode?', remove latest hit':''))+'" onclick="tapCell('+ph+')">'+(c>1?'<span class="cnt">×'+c+'</span>':'')+esc(S.phrases[ph])+'</button>'}).join('');
-  const bonus=(g.bonus_indices||[]).slice(0,3);
-  $('bonusStrip').innerHTML=bonus.map(ph=>{const c=counts[ph]||0,hit=c>0,type=(ph===13||ph===22)?'CLOTHES':'ACTION';return '<button class="bonus-cell '+(hit?'hit':'')+'" aria-pressed="'+hit+'" aria-label="'+esc(S.phrases[ph]+', '+c+' hits'+(removeMode?', remove latest hit':''))+'" onclick="tapCell('+ph+')"><span class="bonus-type">'+type+'</span>'+(c>1?'<span class="cnt">×'+c+'</span>':'')+esc(S.phrases[ph])+'</button>'}).join('');
+  renderCellGrid('board',board,counts);
+  renderCellGrid('bonusStrip',(g.bonus_indices||[]).slice(0,3),counts,true);
+  const potSaving=queuedTaps.some(x=>x.ph===pot);
+  $('potdCard').classList.toggle('pending-hit',potSaving);$('potdCard').setAttribute('aria-busy',String(potSaving));
+  $('potdStamp').hidden=pc===0;setArtwork($('potdStamp'),gameArtwork(g.id).header);
+  renderTapSync();
   $('boardWrap').classList.toggle('remove-mode',removeMode);
   $('bonusStrip').classList.toggle('remove-mode',removeMode);
   $('potdCard').style.outline=removeMode&&pc>0?'2px solid #e65249':'none';
@@ -598,6 +823,7 @@ function renderWinningArtwork(){
   const src=gameArtwork(g.id).winner;
   setArtwork($('resultCelebrationArt'),src);
   $('resultCelebrationCaption').textContent=w.name+(jackpot?' hit the Jackpot!':' completed the 4×4!');
+  if(activeMiniWin||miniWinQueue.length||document.querySelector('.modal.show'))return;
   const key=g.id+':'+w.id+':'+kind;
   if(shownWinCelebrations.has(key))return;
   shownWinCelebrations.add(key);
@@ -608,9 +834,188 @@ function renderWinningArtwork(){
 }
 
 function openModal(id){const previous=document.querySelector('.modal.show');modalTrigger=previous?document.querySelector('.screen.on'):document.activeElement;document.querySelectorAll('.modal.show').forEach(modal=>modal.classList.remove('show'));$(id).classList.add('show');document.querySelector('main.app').inert=true;const first=$(id).querySelector('button,input,[tabindex]');first?.focus()}
-function closeModal(id){$(id).classList.remove('show');if(!document.querySelector('.modal.show')){document.querySelector('main.app').inert=false;if(modalTrigger?.isConnected&&modalTrigger.getClientRects().length)modalTrigger.focus();modalTrigger=null}}
+function closeModal(id){if(id==='miniWin')activeMiniWin=null;$(id).classList.remove('show');if(!document.querySelector('.modal.show')){document.querySelector('main.app').inert=false;if(modalTrigger?.isConnected&&modalTrigger.getClientRects().length)modalTrigger.focus();modalTrigger=null}queueMicrotask(advanceCelebrations)}
 document.addEventListener('keydown',event=>{const modal=document.querySelector('.modal.show');if(!modal)return;if(event.key==='Escape'){event.preventDefault();closeModal(modal.id);return}if(event.key==='Tab'){const controls=[...modal.querySelectorAll('button:not(:disabled),input:not(:disabled),[tabindex="0"]')].filter(el=>el.getClientRects().length);if(!controls.length)return;const first=controls[0],last=controls.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}}});
 
 function closePlayerDetail(){closeModal('playerDetail')}
-async function tapCell(ph){if(Date.now()-(tapGuard[ph]||0)<900)return;tapGuard[ph]=Date.now();if(removeMode){if(!(S?.me?.counts?.[ph]>0))return toast('Choose a collected square to remove one hit.');removeMode=false;renderLive();await mutate('remove',ph)}else await mutate('hit',ph)}async function mutate(action,ph){if($('vibeToggle').checked&&navigator.vibrate)navigator.vibrate(18);const r=await call(action,{...auth,phraseIndex:ph,clientEventId:crypto.randomUUID()});if(!r.ok)return toast(r.error);S=r;renderState(false)}function toggleRemove(){removeMode=!removeMode;renderLive();if(removeMode)toast('REMOVE MODE — tap one hit to remove it')}async function startPrivate(){const r=await call('start_private',auth);if(!r.ok)return alert(r.error);S=r;renderState()}async function endPrivate(){if(!confirm('End this private game for everyone?'))return;const r=await call('end_private',auth);if(!r.ok)return alert(r.error);S=r;closeSettings();showResults()}function processNotes(){if(!S?.notifications)return;const fresh=S.notifications.filter(n=>n.id>lastNote);if(fresh.length){const n=fresh[fresh.length-1];lastNote=Math.max(...fresh.map(n=>n.id));localStorage.sbLastNote=String(lastNote);toast(n.message,n.player_id===S.me?.id)}}function toast(msg,mine=false){const t=$('toast');t.textContent=msg;t.className='toast show '+(mine?'mine':'');setTimeout(()=>t.className='toast',3000)}function showResults(){go('results');const g=S.game,w=S.winner;$('winnerText').textContent=w?(g.mode==='private'?'🏆 '+w.name+(w.achievements?.house?' COMPLETED THE 4×4':' WINS ON POINTS'):'🏆 '+w.name+' TOPS THE DAILY'):'FINAL RESULTS';$('resultList').innerHTML=S.players.map((p,i)=>'<div class="result-row '+(w&&p.id===w.id?'winner':'')+'"><div class="rank">'+(i+1)+'</div><div><b>'+esc(p.name)+'</b><div class="tiny muted">'+p.line_count+' lines • '+p.total_hits+' hits'+(p.achievements?.jackpot?' • JACKPOT':'')+'</div></div><b>'+p.score+' pts</b></div>').join('');renderWinningArtwork()}function copyCode(){navigator.clipboard?.writeText(S.game.code);toast('Code copied')}function shareCode(){const c=S.game.code;if(navigator.share)navigator.share({title:'StevO BingO',text:'Join my StevO BingO game: '+c});else copyCode()}function openSettings(){openModal('settings')}function closeSettings(){closeModal('settings')}function goHowFromSettings(){closeSettings();pending=null;go('howto')}function openLeaveConfirm(){openModal('leaveConfirm')}function closeLeaveConfirm(){closeModal('leaveConfirm')}function leaveCurrentGame(){clearInterval(poll);auth=null;S=null;localStorage.removeItem('sbSession');closeLeaveConfirm();go('home');renderWho()}function confirmLeave(){openLeaveConfirm()}function leaveToHome(){go('home');renderWho()}function clearSession(){auth=null;S=null;localStorage.removeItem('sbSession');clearInterval(poll);go('home');renderWho()}
-async function showPBs(){const p=prof();if(!p)return showProfiles();busy(1);const r=await call('pbs',{profileId:p.id});busy(0);const b=r.pbs||{},fmt=x=>x==null?'—':Math.floor(x/60).toString().padStart(2,'0')+':'+Math.floor(x%60).toString().padStart(2,'0');$('pbList').innerHTML=[['Fastest 1 Line',fmt(b.fastestLine1)],['Fastest 2 Lines',fmt(b.fastestLine2)],['Fastest 4 Corners',fmt(b.fastestCorners)],['Fastest X',fmt(b.fastestX)],['Fastest Full House',fmt(b.fastestHouse)],['Highest Daily Score',b.highestDaily??'—'],['Highest Private Score',b.highestPrivate??'—'],['Most hits in one game',b.mostHits??'—']].map(x=>'<div class="p-row"><span>'+x[0]+'</span><b>'+x[1]+'</b></div>').join('');go('pbs')}function busy(x){$('loading').classList.toggle('show',!!x)}$('strip').addEventListener('click',e=>{const b=e.target.closest('[data-player-id]');if(b)showPlayerDetail(b.dataset.playerId)});$('settings').addEventListener('click',e=>{if(e.target.id==='settings')closeSettings()});$('leaveConfirm').addEventListener('click',e=>{if(e.target.id==='leaveConfirm')closeLeaveConfirm()});$('playerDetail').addEventListener('click',e=>{if(e.target.id==='playerDetail')closePlayerDetail()});$('winCelebration').addEventListener('click',e=>{if(e.target.id==='winCelebration')closeModal('winCelebration')});syncGameArtwork();renderWho();renderSaved();if(auth)startPoll();</script></body></html>
+function toggleRemove(){removeMode=!removeMode;renderLive();if(removeMode)toast('REMOVE MODE — tap one hit to remove it')}async function startPrivate(){const r=await call('start_private',auth);if(!r.ok)return alert(r.error);S=r;renderState()}async function endPrivate(){if(!await finishPendingTaps())return;if(!confirm('End this private game for everyone?'))return;const r=await call('end_private',auth);if(!r.ok)return alert(r.error);S=r;closeSettings();showResults()}function showResults(){go('results');const g=S.game,w=S.winner;$('winnerText').textContent=w?(g.mode==='private'?'🏆 '+w.name+(w.achievements?.house?' COMPLETED THE 4×4':' WINS ON POINTS'):'🏆 '+w.name+' TOPS THE DAILY'):'FINAL RESULTS';$('resultList').innerHTML=S.players.map((p,i)=>'<div class="result-row '+(w&&p.id===w.id?'winner':'')+'"><div class="rank">'+(i+1)+'</div><div><b>'+esc(p.name)+'</b><div class="tiny muted">'+p.line_count+' lines • '+p.total_hits+' hits'+(p.achievements?.jackpot?' • JACKPOT':'')+'</div></div><b>'+p.score+' pts</b></div>').join('');renderWinningArtwork()}function copyCode(){navigator.clipboard?.writeText(S.game.code);toast('Code copied')}function shareCode(){const c=S.game.code;if(navigator.share)navigator.share({title:'StevO BingO',text:'Join my StevO BingO game: '+c});else copyCode()}function openSettings(){openModal('settings')}function closeSettings(){closeModal('settings')}function openLeaveConfirm(){openModal('leaveConfirm')}function closeLeaveConfirm(){closeModal('leaveConfirm')}async function leaveCurrentGame(){if(!await finishPendingTaps())return;stateRevision++;resetCelebrations();clearInterval(poll);auth=null;S=null;localStorage.removeItem('sbSession');closeLeaveConfirm();go('home');renderWho()}function confirmLeave(){openLeaveConfirm()}async function leaveToHome(){if(!await finishPendingTaps())return;go('home');renderWho()}async function clearSession(){if(!await finishPendingTaps())return;stateRevision++;resetCelebrations();auth=null;S=null;localStorage.removeItem('sbSession');clearInterval(poll);go('home');renderWho()}
+async function showPBs(){return withBusyRequest(async()=>{const p=prof();if(!p)return showProfiles();const r=await call('pbs',{profileId:p.id});if(!r.ok)return toast(r.error||'Could not load personal bests.');const b=r.pbs||{},fmt=x=>x==null?'—':Math.floor(x/60).toString().padStart(2,'0')+':'+Math.floor(x%60).toString().padStart(2,'0');$('pbList').innerHTML=[['Fastest 1 Line',fmt(b.fastestLine1)],['Fastest 2 Lines',fmt(b.fastestLine2)],['Fastest 4 Corners',fmt(b.fastestCorners)],['Fastest X',fmt(b.fastestX)],['Fastest Full House',fmt(b.fastestHouse)],['Highest Daily Score',b.highestDaily??'—'],['Highest Private Score',b.highestPrivate??'—'],['Most hits in one game',b.mostHits??'—']].map(x=>'<div class="p-row"><span>'+x[0]+'</span><b>'+x[1]+'</b></div>').join('');go('pbs')})}async function withBusyRequest(fn){if($('loading').classList.contains('show'))return;busy(1);try{return await fn()}catch{toast('Could not connect. Please try again.')}finally{busy(0)}}function busy(x){$('loading').classList.toggle('show',!!x)}$('strip').addEventListener('click',e=>{const b=e.target.closest('[data-player-id]');if(b)showPlayerDetail(b.dataset.playerId)});$('settings').addEventListener('click',e=>{if(e.target.id==='settings')closeSettings()});$('leaveConfirm').addEventListener('click',e=>{if(e.target.id==='leaveConfirm')closeLeaveConfirm()});$('playerDetail').addEventListener('click',e=>{if(e.target.id==='playerDetail')closePlayerDetail()});$('winCelebration').addEventListener('click',e=>{if(e.target.id==='winCelebration')closeModal('winCelebration')});// Pending tiles are feedback for an unsaved command; scores and awards use S only.
+let stateRevision=0,refreshInFlight=false,drainingTaps=false,tapsNeedRetry=false,lastBoardKey='',lastBonusKey='';
+const sessionKey=a=>a?String(a.gameId)+':'+String(a.playerId):'';
+let queuedTaps=[];
+try{
+  const saved=JSON.parse(localStorage.getItem('sbTapOutbox')||'null');
+  if(saved?.session===sessionKey(auth)&&Array.isArray(saved.items))queuedTaps=saved.items.filter(x=>['hit','remove'].includes(x.action)&&Number.isInteger(x.ph)&&x.ph>=0&&x.ph<30&&typeof x.id==='string');
+}catch{}
+function persistTaps(){
+  try{if(queuedTaps.length)localStorage.setItem('sbTapOutbox',JSON.stringify({session:sessionKey(auth),items:queuedTaps}));else localStorage.removeItem('sbTapOutbox')}catch{}
+}
+function projectedCounts(){
+  const counts=[...(S?.me?.counts||Array(S?.phrases?.length||30).fill(0))];
+  for(const item of queuedTaps)counts[item.ph]=Math.max(0,(counts[item.ph]||0)+(item.action==='hit'?1:-1));
+  return counts;
+}
+function renderTapSync(){
+  const button=$('tapSync');
+  button.hidden=!queuedTaps.length;
+  button.textContent=tapsNeedRetry?'Retry taps':'Saving…';
+  button.disabled=!tapsNeedRetry;
+  button.setAttribute('aria-label',tapsNeedRetry?'Retry saving your pending taps':queuedTaps.length+' taps saving');
+}
+function renderCellGrid(id,indices,counts,bonus=false){
+  const parent=$(id),key=String(S.game.id)+':'+String(S.me.id)+':'+indices.join(',');
+  if(key!==(bonus?lastBonusKey:lastBoardKey)||parent.children.length!==indices.length){
+    parent.replaceChildren(...indices.map(ph=>{
+      const button=document.createElement('button');
+      button.className=bonus?'bonus-cell':'sq';button.dataset.ph=String(ph);
+      button.onclick=()=>tapCell(ph);
+      if(bonus){const type=document.createElement('span');type.className='bonus-type';type.textContent=(ph===13||ph===22)?'CLOTHES':'ACTION';button.append(type)}
+      const stamp=document.createElement('img');stamp.className='cell-stamp';stamp.alt='';stamp.setAttribute('aria-hidden','true');stamp.decoding='async';
+      const label=document.createElement('span');label.className='cell-label';label.textContent=S.phrases[ph]||'';
+      const badge=document.createElement('span');badge.className='cnt';
+      button.append(stamp,label,badge);return button;
+    }));
+    if(bonus)lastBonusKey=key;else lastBoardKey=key;
+  }
+  const artwork=gameArtwork(S.game.id).header;
+  for(const button of parent.children){
+    const ph=Number(button.dataset.ph),count=counts[ph]||0,saving=queuedTaps.some(x=>x.ph===ph);
+    button.classList.toggle('hit',count>0);button.classList.toggle('pending-hit',saving);
+    button.setAttribute('aria-pressed',String(count>0));button.setAttribute('aria-busy',String(saving));
+    button.setAttribute('aria-label',(S.phrases[ph]||'')+', '+count+' hits'+(saving?', saving':'')+(removeMode?', remove latest hit':''));
+    const image=button.querySelector('.cell-stamp');image.hidden=count===0;setArtwork(image,artwork);
+    const badge=button.querySelector('.cnt');badge.hidden=count<2;badge.textContent='×'+count;
+  }
+}
+async function refresh(){
+  if(!auth||document.hidden||refreshInFlight||queuedTaps.length||drainingTaps)return;
+  const revision=stateRevision,key=sessionKey(auth);refreshInFlight=true;
+  try{
+    const r=await call('state',auth);
+    if(r.ok&&revision===stateRevision&&key===sessionKey(auth)&&!queuedTaps.length){
+      const changed=visibleStateKey(r)!==visibleStateKey(S);S=r;if(changed)renderState(false);
+    }
+  }catch{}finally{refreshInFlight=false}
+}
+function tapCell(ph){
+  if(!auth||!S?.me||S.game.status!=='live')return;
+  const action=removeMode?'remove':'hit',guard=action+':'+ph;
+  if(Date.now()-(tapGuard[guard]||0)<180)return;
+  if(action==='remove'&&!(projectedCounts()[ph]>0))return toast('Choose a collected square to remove one hit.');
+  tapGuard[guard]=Date.now();removeMode=false;
+  if($('vibeToggle').checked&&navigator.vibrate)navigator.vibrate(12);
+  queuedTaps.push({action,ph,id:crypto.randomUUID()});stateRevision++;persistTaps();
+  renderLive();void drainTaps();
+}
+async function drainTaps(){
+  if(drainingTaps||!auth||!queuedTaps.length)return;
+  drainingTaps=true;tapsNeedRetry=false;renderTapSync();
+  const key=sessionKey(auth);
+  try{
+    while(queuedTaps.length&&key===sessionKey(auth)){
+      const item=queuedTaps[0];let response=null;
+      for(let attempt=0;attempt<2&&!response;attempt++){
+        const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
+        try{response=await call(item.action,{...auth,phraseIndex:item.ph,clientEventId:item.id},controller.signal)}catch{}finally{clearTimeout(timer)}
+      }
+      if(key!==sessionKey(auth))break;
+      if(!response){tapsNeedRetry=true;toast('Your taps are waiting. Reconnect, then tap Retry taps.');break}
+      queuedTaps.shift();persistTaps();
+      if(response.ok){S=response;renderState(false)}else{toast(response.error||'That tap could not be saved.');if(S?.game?.status==='live')renderLive()}
+      renderTapSync();
+    }
+  }finally{drainingTaps=false;renderTapSync()}
+}
+async function finishPendingTaps(){
+  if(drainingTaps){toast('Saving your taps. Please try again in a moment.');return false}
+  if(queuedTaps.length)await drainTaps();
+  if(queuedTaps.length){toast('Reconnect and retry your taps before leaving.');return false}
+  return true;
+}
+window.addEventListener('online',()=>void drainTaps());
+document.addEventListener('visibilitychange',()=>{if(!document.hidden){if(queuedTaps.length)void drainTaps();else void refresh()}});
+
+const BOARD_LINES=[...[0,1,2,3].map(r=>[0,1,2,3].map(c=>r*4+c)),...[0,1,2,3].map(c=>[0,1,2,3].map(r=>r*4+c)),[0,5,10,15],[3,6,9,12]];
+const miniWinQueue=[];let activeMiniWin=null,toastTimer=null,noteGameId='';
+try{if(auth&&localStorage.sbNoteGameId===auth.gameId)noteGameId=auth.gameId}catch{}
+function resetCelebrations(){removeMode=false;tapGuard={};miniWinQueue.length=0;activeMiniWin=null;noteGameId='';$('miniWin').classList.remove('show');document.querySelector('main.app').inert=!!document.querySelector('.modal.show')}
+function baselineRoomNotes(){noteGameId=S.game.id;lastNote=Math.max(0,...(S.notifications||[]).map(n=>Number(n.id)));try{localStorage.sbLastNote=String(lastNote);localStorage.sbNoteGameId=noteGameId}catch{}}
+function miniPattern(kind,playerId){
+  if(kind==='corners')return [0,3,12,15];
+  if(kind==='x')return [0,3,5,6,9,10,12,15];
+  const completed=playerId===S?.me?.id?BOARD_LINES.filter(line=>line.every(pos=>(S.me.counts?.[S.me.board?.[pos]]||0)>0)):[];
+  const lines=completed.length?completed:[[0,1,2,3],[4,5,6,7]];
+  return lines.slice(0,kind==='line2'?2:1).flat();
+}
+function processNotes(){
+  if(!S?.notifications)return;
+  if(noteGameId!==S.game.id){resetCelebrations();baselineRoomNotes();return}
+  const fresh=S.notifications.filter(n=>Number(n.id)>lastNote).sort((a,b)=>a.id-b.id);
+  for(const note of fresh){
+    if(['line1','line2','corners','x'].includes(note.kind)){
+      miniWinQueue.push({...note,pattern:miniPattern(note.kind,note.player_id),gameId:S.game.id,art:gameArtwork(S.game.id).winner});
+    }else if(!['house','jackpot','winner'].includes(note.kind))toast(note.message,note.player_id===S.me?.id);
+    lastNote=Math.max(lastNote,Number(note.id));
+  }
+  if(fresh.length){try{localStorage.sbLastNote=String(lastNote)}catch{}queueMicrotask(advanceCelebrations)}
+}
+function advanceCelebrations(){
+  if(document.querySelector('.modal.show'))return;
+  while(miniWinQueue.length&&miniWinQueue[0].gameId!==S?.game?.id)miniWinQueue.shift();
+  if(miniWinQueue.length){
+    activeMiniWin=miniWinQueue.shift();const n=activeMiniWin;
+    $('miniWinTitle').textContent=({line1:'ONE LINE!',line2:'TWO LINES!',corners:'FOUR CORNERS!',x:'X MARKS THE SPOT!'})[n.kind];
+    $('miniWinMessage').textContent=n.message;$('miniWinPoints').textContent='+'+n.points+' BONUS POINTS';
+    setArtwork($('miniWinArt'),n.art);
+    $('miniWinPattern').innerHTML=Array.from({length:16},(_,i)=>'<i class="pattern-square '+(n.pattern.includes(i)?'active':'')+'"></i>').join('');
+    $('miniWinPattern').setAttribute('aria-label',({line1:'Completed line',line2:'Two completed lines',corners:'All four corners',x:'Both diagonal lines'})[n.kind]);
+    openModal('miniWin');
+  }else if(S?.game?.status==='complete')renderWinningArtwork();
+}
+function dismissMiniWin(){activeMiniWin=null;closeModal('miniWin')}
+function toast(msg,mine=false){const t=$('toast');clearTimeout(toastTimer);t.textContent=msg;t.className='toast show '+(mine?'mine':'');toastTimer=setTimeout(()=>t.className='toast',3000)}
+
+// Replace the existing chooseMode, savePlayer, selectPlayer, finishHow and
+// goHowFromSettings implementations with these versions. Keep resumePending.
+// The guide appears before each new game and returns to its caller when opened
+// from Settings or the home help button.
+let howtoBackTarget='home',howtoIntent='pending';
+function showHowto(backTarget='home',intent='pending'){
+  howtoBackTarget=backTarget;
+  howtoIntent=intent;
+  $('howtoContinue').textContent=intent==='return'?'BACK TO '+(backTarget==='home'?'HOME':'GAME'):'CONTINUE';
+  go('howto');
+}
+function backFromHowto(){if(howtoBackTarget==='profiles')return showProfiles();go(howtoBackTarget)}
+function chooseMode(mode){
+  if(queuedTaps.length)return toast('Finish saving your taps before starting another game.');
+  pending=mode;
+  if(!prof())return showProfiles();
+  showHowto('home');
+}
+function savePlayer(){
+  const name=$('nameInput').value.trim();
+  if(!name)return $('nameInput').focus();
+  const p={id:crypto.randomUUID(),name,onboarded:false};
+  profiles.push(p);current=p.id;persist();renderSaved();$('nameInput').value='';
+  showHowto('profiles');
+}
+function selectPlayer(id){
+  current=id;persist();
+  const p=prof();
+  if(pending)return showHowto('profiles');
+  if(p&&!p.onboarded)return showHowto('profiles');
+  go('home');
+}
+function finishHow(){
+  const p=prof();if(p){p.onboarded=true;persist()}
+  if(howtoIntent==='return')return go(howtoBackTarget);
+  resumePending();
+}
+function goHowFromSettings(){
+  const from=document.querySelector('.screen.on')?.id||'home';
+  closeSettings();
+  showHowto(from,'return');
+}
+
+$('miniWin').addEventListener('click',e=>{if(e.target.id==='miniWin')dismissMiniWin()});syncGameArtwork();renderWho();renderSaved();if(auth)startPoll();</script></body></html>

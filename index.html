@@ -624,6 +624,8 @@ h1.brand{margin:0}
 #updateMessage{font-size:16px;line-height:1.4;color:#eee3ce}
 #updateError{min-height:1.5em;color:#ffc28c}
 #updateAvailable .split{margin-top:14px}
+
+#homeRefreshBtn{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;min-height:48px;font-size:15px}#homeRefreshStatus{font:700 10px system-ui;letter-spacing:.08em}#homeRefreshBtn.update-available{border-color:#ff952b;animation:homeRefreshPulse 3s ease-in-out infinite}@keyframes homeRefreshPulse{0%,100%{background:#17232b;box-shadow:0 0 0 rgba(255,149,43,0)}50%{background:#563014;box-shadow:0 0 18px rgba(255,149,43,.45)}}
 </style></head><body><div id="toast" class="toast" role="status" aria-live="polite"></div><div id="loading" class="loading" role="status" aria-live="polite">SYNCING…</div><main class="app"><button id="updateNotice" hidden onclick="showUpdateAvailable()">UPDATE AVAILABLE</button>
 <section id="home" class="screen on" aria-label="StevO BingO home">
   <div class="hero"><div class="hero-copy"><h1 class="brand">StevO <span>BingO</span></h1><div class="tag" style="margin-top:18px">SAME STEVE.<br>DIFFERENT DAY.</div></div><img class="steve-portrait" src="artwork/characters/header-01-king.webp" width="1122" height="1402" alt="" aria-hidden="true" decoding="async"></div>
@@ -633,6 +635,7 @@ h1.brand{margin:0}
     <button class="btn orange" onclick="chooseMode('daily')"><span class="mode-glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M7 3v4M17 3v4M3 10h18M7 14h2M13 14h2M7 18h2"></path></svg></span><span class="mode-button-copy"><b>DAILY PLAY</b><small>18:00–00:00 London time</small></span></button>
     <button class="btn out" onclick="chooseMode('private')"><span class="mode-glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"></circle><path d="M3 21v-2a6 6 0 0 1 12 0v2M16 4a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 4v2"></path></svg></span><span class="mode-button-copy"><b>PRIVATE PLAY</b><small>Join or create a game</small></span></button>
     <button class="btn out personal-bests" onclick="showPBs()"><span class="mode-glyph" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10v5a5 5 0 0 1-10 0V3ZM7 5H3v2a4 4 0 0 0 4 4M17 5h4v2a4 4 0 0 1-4 4M12 13v5M8 21h8M9 18h6"></path></svg></span>PERSONAL BESTS</button>
+    <button id="homeRefreshBtn" class="btn out" aria-label="Refresh Game" aria-describedby="homeRefreshStatus" onclick="refreshGameUpdate(true)"><span aria-hidden="true">↻</span> REFRESH GAME <small id="homeRefreshStatus" hidden>UPDATE AVAILABLE</small></button>
   </div>
   <div class="home-help"><button class="link" onclick="showHowto('home','return')">HOW TO PLAY</button></div>
 </section>
@@ -1033,9 +1036,9 @@ function goHowFromSettings(){
 }
 
 $('miniWin').addEventListener('click',e=>{if(e.target.id==='miniWin')dismissMiniWin()});syncGameArtwork();renderWho();renderSaved();if(auth){startPoll();void rejoinCurrent()}
-const RUNNING_BUILD="2026-10-24-classic-issue9.1",RUNNING_SEQUENCE=1;
+const RUNNING_BUILD="2026-10-25-classic-refresh.1",RUNNING_SEQUENCE=2;
 const RELEASE_ENDPOINT=new URL('/functions/v1/steve-bingo-release',API).href;
-let availableRelease=null,updateCheckRunning=false,deferredUpdate=0;
+let availableRelease=null,updateCheckRunning=false,deferredUpdate=0,refreshRunning=false;
 try{deferredUpdate=Number(sessionStorage.getItem('sbUpdateLater')||0)}catch{}
 function showUpdateAvailable(){
   if(!availableRelease||(auth&&!S?.me)||document.querySelector('.modal.show')||queuedTaps.length||drainingTaps||$('loading').classList.contains('show'))return;
@@ -1057,31 +1060,36 @@ async function checkForUpdates(){
       typeof release.build!=='string'||release.build.length>80||!/^[a-f0-9]{64}$/.test(release.asset_sha256||''))return;
     if(!release.enabled||release.sequence<=RUNNING_SEQUENCE||release.build===RUNNING_BUILD){
       availableRelease=null;$('updateNotice').hidden=true;
+      $('homeRefreshBtn').classList.remove('update-available');$('homeRefreshStatus').hidden=true;
       if($('updateAvailable').classList.contains('show'))closeModal('updateAvailable');
       return;
     }
     // There is deliberately no manifest-supplied navigation URL.
     availableRelease={sequence:release.sequence,build:release.build};
     $('updateNotice').hidden=false;
+    $('homeRefreshBtn').classList.add('update-available');$('homeRefreshStatus').hidden=false;
     if(deferredUpdate!==release.sequence)showUpdateAvailable();
   }catch{}finally{clearTimeout(timer);updateCheckRunning=false}
 }
-async function refreshGameUpdate(){
-  if(!availableRelease)return;
-  const button=$('refreshGameBtn');button.disabled=true;
+async function refreshGameUpdate(fromHome=false){
+  if((!fromHome&&!availableRelease)||refreshRunning)return;
+  refreshRunning=true;
+  const button=fromHome?$('homeRefreshBtn'):$('refreshGameBtn');
+  if(!fromHome)button.disabled=true;
+  const showError=message=>{if(fromHome)toast(message);else $('updateError').textContent=message};
   try{
-    if(navigator.onLine===false){$('updateError').textContent='Reconnect first. Your current game is staying open.';return}
-    if(!await finishPendingTaps()){$('updateError').textContent='Your taps are still saving. Retry them before refreshing.';return}
+    if(navigator.onLine===false){showError('Reconnect first. Your current game is staying open.');return}
+    if(!await finishPendingTaps()){showError('Your taps are still saving. Retry them before refreshing.');return}
     if(auth){
       const recovered=await call('rejoin',auth);
-      if(!recovered.ok||recovered.me?.id!==auth.playerId){$('updateError').textContent='Could not confirm your saved game. Please try again.';return}
+      if(!recovered.ok||recovered.me?.id!==auth.playerId){showError('Could not confirm your saved game. Please try again.');return}
       S=recovered;
     }
-    if(queuedTaps.length||drainingTaps){$('updateError').textContent='Wait for your latest tap to finish saving.';return}
+    if(queuedTaps.length||drainingTaps){showError('Wait for your latest tap to finish saving.');return}
     // Reload this exact origin; localStorage identity and outbox never move hosts.
     location.reload();
-  }catch{$('updateError').textContent='Could not connect. Your current game is staying open.'}
-  finally{button.disabled=false}
+  }catch{showError('Could not connect. Your current game is staying open.')}
+  finally{if(!fromHome)button.disabled=false;refreshRunning=false}
 }
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)void checkForUpdates()});
 window.addEventListener('online',()=>void checkForUpdates());
